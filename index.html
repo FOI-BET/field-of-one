@@ -554,7 +554,7 @@
       <div class="tagline">MLB BETTING ANALYSIS PLATFORM &nbsp;·&nbsp; PROPRIETARY MODEL</div>
     </div>
     <div class="header-right">
-      <div><span class="live-dot"></span><span class="live-label">LIVE DEMO MODE</span></div>
+      <div><span class="live-dot"></span><span class="live-label" id="liveLabel">LOADING...</span></div>
       <div class="date-label" id="dateLabel"></div>
     </div>
   </header>
@@ -755,33 +755,12 @@ document.getElementById('dateLabel').textContent =
 document.getElementById('refreshLabel').textContent = 'LAST UPDATED · ' +
   now.toLocaleTimeString('en-US', { hour:'2-digit', minute:'2-digit' });
 
-// ── Demo data (replaced by JSON fetch in production) ─────────────────────
-const DESK_DATA = [
-  { away:'NYY', home:'BOS', conf:'High',  side:'Over',  modelTotal:9.1, edge:0.6,  homeEdge:7, pattern:'Home Edge 5-10', alignment:'ALIGNED',    signal:'SHARP OVER (RLM)' },
-  { away:'HOU', home:'SEA', conf:'High',  side:'Under', modelTotal:7.0, edge:-0.5, homeEdge:2, pattern:'',               alignment:'MODEL ONLY',  signal:'NEUTRAL' },
-  { away:'LAD', home:'SFG', conf:'High',  side:'Under', modelTotal:6.7, edge:-0.8, homeEdge:9, pattern:'Home Edge 5-10', alignment:'ALIGNED',     signal:'SHARP UNDER (RLM)' },
-  { away:'ATL', home:'MIA', conf:'Med',   side:'Over',  modelTotal:8.6, edge:0.6,  homeEdge:4, pattern:'',               alignment:'MODEL ONLY',  signal:'PUBLIC OVER' },
-  { away:'CHC', home:'MIL', conf:'Med',   side:'Over',  modelTotal:9.2, edge:0.7,  homeEdge:6, pattern:'Home Edge 5-10', alignment:'MODEL ONLY',  signal:'NEUTRAL' },
-  { away:'MIN', home:'DET', conf:'Med',   side:'Under', modelTotal:7.2, edge:-0.3, homeEdge:8, pattern:'Home Edge 5-10', alignment:'CONFLICT',    signal:'SHARP OVER (RLM)' },
-  { away:'TBR', home:'BAL', conf:'Low',   side:'Over',  modelTotal:8.8, edge:0.3,  homeEdge:3, pattern:'',               alignment:'MODEL ONLY',  signal:'NEUTRAL' },
-  { away:'CIN', home:'PIT', conf:'Low',   side:'Under', modelTotal:7.4, edge:-0.4, homeEdge:5, pattern:'Home Edge 5-10', alignment:'MODEL ONLY',  signal:'NEUTRAL' },
-  { away:'SDP', home:'COL', conf:'Med',   side:'Over',  modelTotal:9.5, edge:0.5,  homeEdge:1, pattern:'',               alignment:'MODEL ONLY',  signal:'PUBLIC STEAM OVER' },
-];
+// ── Data — fetch from data.json, fall back to demo ────────────────────────
+let DESK_DATA = [];
+let MKT_DATA  = [];
+let HISTORY   = [];
 
-const MKT_DATA = [
-  { away:'NYY', home:'BOS', awayML:-125, homeML:+108, total:8.5, move:'+0.5', betO:52, monO:62, signal:'SHARP OVER (RLM)' },
-  { away:'HOU', home:'SEA', awayML:-148, homeML:+128, total:7.5, move:'FLAT', betO:48, monO:45, signal:'NEUTRAL' },
-  { away:'LAD', home:'SFG', awayML:-162, homeML:+140, total:7.5, move:'-0.5', betO:55, monO:35, signal:'SHARP UNDER (RLM)' },
-  { away:'ATL', home:'MIA', awayML:-108, homeML:-108, total:8.0, move:'+0.5', betO:71, monO:68, signal:'PUBLIC OVER' },
-  { away:'CHC', home:'MIL', awayML:-115, homeML:-102, total:8.5, move:'FLAT', betO:50, monO:52, signal:'NEUTRAL' },
-  { away:'MIN', home:'DET', awayML:-132, homeML:+114, total:7.5, move:'+0.5', betO:44, monO:58, signal:'SHARP OVER (RLM)' },
-  { away:'TBR', home:'BAL', awayML:+110, homeML:-128, total:8.5, move:'FLAT', betO:49, monO:50, signal:'NEUTRAL' },
-  { away:'CIN', home:'PIT', awayML:-105, homeML:-112, total:8.0, move:'-0.5', betO:46, monO:44, signal:'NEUTRAL' },
-  { away:'SDP', home:'COL', awayML:-142, homeML:+122, total:9.0, move:'+1.0', betO:73, monO:70, signal:'PUBLIC STEAM OVER' },
-];
-
-// history — 60 games of synthetic data
-function buildHistory() {
+function buildDemoHistory() {
   const rng = (seed) => { let s=seed; return () => { s=(s*9301+49297)%233280; return s/233280; }; };
   const r = rng(42);
   const confs = ['High','High','High','Med','Med','Med','Med','Low','Low'];
@@ -800,7 +779,89 @@ function buildHistory() {
   return rows;
 }
 
-const HISTORY = buildHistory();
+function mapDesk(d) {
+  return {
+    away:       d.away        || '',
+    home:       d.home        || '',
+    away_sp:    d.away_sp     || '',
+    home_sp:    d.home_sp     || '',
+    conf:       d.conf        || '',
+    side:       d.side        || '',
+    modelTotal: parseFloat(d.proj)       || 0,
+    edge:       parseFloat(d.edge)       || 0,
+    homeEdge:   parseFloat(d.home_edge)  || 0,
+    pattern:    d.pattern     || '',
+    alignment:  d.alignment   || '',
+    signal:     d.mkt_signal  || '',
+    seasonWpct: parseFloat(d.season_wpct)||0,
+    l30Wpct:    parseFloat(d.l30_wpct)  ||0,
+    l7Wpct:     parseFloat(d.l7_wpct)   ||0,
+  };
+}
+
+function mapMkt(m) {
+  return {
+    away:    m.away      || '',
+    home:    m.home      || '',
+    awayML:  m.away_ml,
+    homeML:  m.home_ml,
+    total:   m.total,
+    move:    m.move      || 'FLAT',
+    betO:    parseFloat(m.bet_over)   || 0,
+    monO:    parseFloat(m.money_over) || 0,
+    signal:  m.signal    || '',
+  };
+}
+
+function mapHistory(h) {
+  return {
+    date:      h.date   || '',
+    away:      h.away   || '',
+    home:      h.home   || '',
+    conf:      '',
+    side:      h.signal && h.signal.includes('OVER') ? 'Over' : 'Under',
+    homeEdge:  0,
+    result:    h.result === 'Win' ? 'W' : h.result === 'Loss' ? 'L' : '',
+  };
+}
+
+async function loadData() {
+  try {
+    const resp = await fetch('data.json?t=' + Date.now());
+    if (!resp.ok) throw new Error('data.json not found');
+    const json = await resp.json();
+
+    DESK_DATA = (json.desk    || []).map(mapDesk);
+    MKT_DATA  = (json.market  || []).map(mapMkt);
+    HISTORY   = (json.history || []).map(mapHistory).filter(r => r.result === 'W' || r.result === 'L');
+
+    if (json.generated) {
+      document.getElementById('refreshLabel').textContent = 'DATA UPDATED · ' + json.generated;
+    }
+    document.getElementById('liveLabel').textContent = 'LIVE';
+    console.log('Loaded live data.json');
+  } catch(e) {
+    console.log('data.json not found — using demo data');
+    DESK_DATA = [
+      { away:'WSN', home:'MIA', conf:'Low',   side:'Under', modelTotal:8.44, edge:-0.06, homeEdge:2.1,  pattern:'', alignment:'MODEL ONLY', signal:'PUBLIC' },
+      { away:'ATH', home:'BAL', conf:'Medium', side:'Under', modelTotal:8.31, edge:-1.19, homeEdge:0.3, pattern:'', alignment:'CONFLICT',   signal:'PUBLIC' },
+      { away:'PHI', home:'COL', conf:'Low',   side:'Over',  modelTotal:9.11, edge:0.61,  homeEdge:15.2, pattern:'', alignment:'MODEL ONLY', signal:'PUBLIC' },
+      { away:'CIN', home:'HOU', conf:'Low',   side:'Under', modelTotal:8.65, edge:-0.35, homeEdge:5.4,  pattern:'Home Edge 5-10', alignment:'MODEL ONLY', signal:'PUBLIC' },
+      { away:'NYY', home:'SEA', conf:'Low',   side:'Over',  modelTotal:8.8,  edge:0.8,   homeEdge:12.5, pattern:'', alignment:'MODEL + STEAM', signal:'PUBLIC STEAM' },
+      { away:'CHC', home:'MIL', conf:'High',  side:'Over',  modelTotal:10.73,edge:2.73,  homeEdge:8.5,  pattern:'Home Edge 5-10', alignment:'MODEL ONLY', signal:'PUBLIC' },
+      { away:'PIT', home:'TEX', conf:'Low',   side:'Over',  modelTotal:8.73, edge:0.73,  homeEdge:11.1, pattern:'', alignment:'MODEL ONLY', signal:'PUBLIC' },
+      { away:'NYM', home:'STL', conf:'Medium',side:'Over',  modelTotal:9.39, edge:0.89,  homeEdge:3.1,  pattern:'', alignment:'MODEL ONLY', signal:'NEUTRAL' },
+      { away:'STL', home:'SDP', conf:'Low',   side:'Under', modelTotal:7.76, edge:-0.74, homeEdge:2.6,  pattern:'', alignment:'MODEL ONLY', signal:'PUBLIC' },
+      { away:'ATL', home:'LAD', conf:'High',  side:'Over',  modelTotal:10.76,edge:2.26,  homeEdge:0.1,  pattern:'', alignment:'ALIGNED',    signal:'SHARP OVER (RLM)' },
+      { away:'DET', home:'KCR', conf:'Medium',side:'Over',  modelTotal:9.72, edge:1.72,  homeEdge:0.1,  pattern:'', alignment:'MODEL ONLY', signal:'N/A' },
+    ];
+    HISTORY = buildDemoHistory();
+    document.getElementById('liveLabel').textContent = 'DEMO MODE';
+  }
+  renderAll();
+}
+
+loadData();
 
 // ── Patterns ───────────────────────────────────────────────────────────────
 const PATTERNS = [
@@ -857,6 +918,10 @@ function signalText(s) {
   return `<span style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.65rem;">—</span>`;
 }
 
+let rollChart = null;
+
+function renderAll() {
+
 function renderDesk() {
   const tbody = document.getElementById('deskBody');
   const filtered = DESK_DATA.filter(g => activeConf.has(g.conf));
@@ -885,7 +950,7 @@ function renderDesk() {
 
 renderDesk();
 
-// ── Season metrics ─────────────────────────────────────────────────────────
+// ── Season metrics (inside renderAll) ─────────────────────────────────────
 const wins  = HISTORY.filter(r=>r.result==='W').length;
 const total = HISTORY.length;
 const he    = HISTORY.filter(r=>r.homeEdge>=5&&r.homeEdge<10);
@@ -1074,6 +1139,9 @@ document.getElementById('patternGrid').innerHTML = PATTERNS.map(p => {
   </div>`;
 }).join('');
 
+} // end renderAll
+
 </script>
 </body>
 </html>
+
