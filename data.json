@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-10 15:01",
+  "generated": "2026-05-10 15:12",
   "date": "2026-05-10",
   "desk": [
     {
@@ -273,2421 +273,3629 @@
       "date": "2026-04-04",
       "away": "STL",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "DET Lean",
+      "home_edge": 8.5,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 0.2190723008849496,
+      "final": 17.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-04",
       "away": "TOR",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.0663431451327483,
+      "final": 9.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-04",
       "away": "LAD",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAD Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.4878182530973483,
+      "final": 15.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-04",
       "away": "BAL",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "BAL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.8396121451327518,
+      "final": 5.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-04",
       "away": "ATL",
       "home": "ARI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ARI Lean",
+      "home_edge": 7.1,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 0.6440646389380458,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-04",
       "away": "PHI",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PHI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.3232034548672633,
+      "final": 3.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-04",
       "away": "NYM",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYM Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.254052962831851,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-04",
       "away": "SEA",
       "home": "LAA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.758585253097352,
+      "final": 1.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-05",
       "away": "MIA",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "NYY Lean",
+      "home_edge": 11.0,
+      "pattern": "nan",
+      "total_edge": 0.8243723008849457,
+      "final": 13.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-05",
       "away": "BAL",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "BAL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.8219721451327509,
+      "final": 10.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-05",
       "away": "TOR",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.2513768548672513,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-05",
       "away": "TBR",
       "home": "MIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIN Lean",
+      "home_edge": 0.9,
+      "pattern": "nan",
+      "total_edge": 0.2357831929203495,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-05",
       "away": "PHI",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PHI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.686627454867264,
+      "final": 5.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-05",
       "away": "NYM",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SFG Lean",
+      "home_edge": 9.0,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.897012962831852,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-05",
       "away": "STL",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "STL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.6709276991150492,
+      "final": 8.0,
+      "result": "Push"
     },
     {
       "date": "2026-04-06",
       "away": "KCR",
       "home": "CLE",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CLE Lean",
+      "home_edge": 1.6,
+      "pattern": "nan",
+      "total_edge": -0.2415340371681483,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-06",
       "away": "MIL",
       "home": "BOS",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "MIL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.872438084955752,
+      "final": 14.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-06",
       "away": "LAD",
       "home": "TOR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAD Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.539822300884953,
+      "final": 16.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-06",
       "away": "DET",
       "home": "MIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "MIN Lean",
+      "home_edge": 7.2,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.385855192920349,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-06",
       "away": "SEA",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.663798962831851,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-06",
       "away": "ATL",
       "home": "LAA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "ATL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.215106746902649,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-06",
       "away": "STL",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "WSN Lean",
+      "home_edge": 6.3,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.2642462530973511,
+      "final": 15.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-07",
       "away": "KCR",
       "home": "CLE",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "KCR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.0634299628318517,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-07",
       "away": "BAL",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "BAL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.39480785486725,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-07",
       "away": "ARI",
       "home": "NYM",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "NYM Lean",
+      "home_edge": 6.7,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 3.12326940884955,
+      "final": 7.0,
+      "result": "Push"
     },
     {
       "date": "2026-04-07",
       "away": "SDP",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PIT Lean",
+      "home_edge": 4.2,
+      "pattern": "nan",
+      "total_edge": 1.953452854867249,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-07",
       "away": "CIN",
       "home": "MIA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CIN Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.3682477469026466,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-07",
       "away": "MIL",
       "home": "BOS",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "BOS Lean",
+      "home_edge": 4.5,
+      "pattern": "nan",
+      "total_edge": 4.557428084955752,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-07",
       "away": "ATH",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYY Lean",
+      "home_edge": 8.3,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.425922300884951,
+      "final": 8.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-07",
       "away": "LAD",
       "home": "TOR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAD Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 3.984972300884952,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-07",
       "away": "DET",
       "home": "MIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "DET Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.40273519292035,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-07",
       "away": "SEA",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TEX Lean",
+      "home_edge": 1.2,
+      "pattern": "nan",
+      "total_edge": 1.652518962831856,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-07",
       "away": "HOU",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "HOU Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.9931554548672654,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-08",
       "away": "SDP",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SDP Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.28313285486725,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-08",
       "away": "KCR",
       "home": "CLE",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "KCR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.91095503716815,
+      "final": 12.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-08",
       "away": "SEA",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.0504159628318543,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-08",
       "away": "PHI",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PHI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.5380879628318525,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-08",
       "away": "STL",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "STL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.253846253097351,
+      "final": 7.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-08",
       "away": "ATL",
       "home": "LAA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAA Lean",
+      "home_edge": 6.4,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.3384472530973497,
+      "final": 10.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-08",
       "away": "ARI",
       "home": "NYM",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "ARI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.523525408849553,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-08",
       "away": "ATH",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYY Lean",
+      "home_edge": 5.9,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.533922300884949,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-08",
       "away": "DET",
       "home": "MIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "DET Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.3099351929203493,
+      "final": 14.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-10",
       "away": "PIT",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CHC Lean",
+      "home_edge": 3.3,
+      "pattern": "nan",
+      "total_edge": 0.7740699628318533,
+      "final": 2.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-10",
       "away": "MIA",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.912277699115048,
+      "final": 2.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-10",
       "away": "ARI",
       "home": "PHI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "PHI Lean",
+      "home_edge": 4.7,
+      "pattern": "nan",
+      "total_edge": 2.319570746902652,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-10",
       "away": "MIN",
       "home": "TOR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TOR Lean",
+      "home_edge": 0.9,
+      "pattern": "nan",
+      "total_edge": -0.1631776991150495,
+      "final": 14.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-10",
       "away": "ATH",
       "home": "NYM",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "ATH Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.161909408849551,
+      "final": 4.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-10",
       "away": "SFG",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "BAL Lean",
+      "home_edge": 5.5,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.4666776991150527,
+      "final": 9.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-10",
       "away": "CLE",
       "home": "ATL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CLE Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.3903142530973511,
+      "final": 16.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-10",
       "away": "CHW",
       "home": "KCR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "KCR Lean",
+      "home_edge": 9.8,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.0183752530973517,
+      "final": 2.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-10",
       "away": "WSN",
       "home": "MIL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIL Lean",
+      "home_edge": 11.7,
+      "pattern": "nan",
+      "total_edge": -0.0685410371681456,
+      "final": 10.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-10",
       "away": "COL",
       "home": "SDP",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "COL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.97876203716815,
+      "final": 7.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-10",
       "away": "TEX",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAD Lean",
+      "home_edge": 7.6,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 0.7941097469026506,
+      "final": 15.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-10",
       "away": "NYY",
       "home": "TBR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TBR Lean",
+      "home_edge": 12.9,
+      "pattern": "nan",
+      "total_edge": 1.155781408849556,
+      "final": 8.0,
+      "result": "Push"
     },
     {
       "date": "2026-04-11",
       "away": "PIT",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CHC Lean",
+      "home_edge": 4.1,
+      "pattern": "nan",
+      "total_edge": 1.907333962831851,
+      "final": 7.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-11",
       "away": "MIN",
       "home": "TOR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "MIN Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.706822300884951,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-11",
       "away": "CHW",
       "home": "KCR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "KCR Lean",
+      "home_edge": 12.7,
+      "pattern": "nan",
+      "total_edge": -2.226514253097354,
+      "final": 2.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-11",
       "away": "ATH",
       "home": "NYM",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ATH Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.756789408849551,
+      "final": 17.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-11",
       "away": "NYY",
       "home": "TBR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "NYY Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.7903414088495495,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-11",
       "away": "SFG",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SFG Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.409322300884948,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-11",
       "away": "TEX",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "LAD Lean",
+      "home_edge": 13.3,
+      "pattern": "nan",
+      "total_edge": 1.259229746902649,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-11",
       "away": "HOU",
       "home": "SEA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SEA Lean",
+      "home_edge": 10.3,
+      "pattern": "nan",
+      "total_edge": -0.3761329902654929,
+      "final": 15.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-12",
       "away": "SFG",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "BAL Lean",
+      "home_edge": 5.9,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -2.191827699115049,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-12",
       "away": "MIN",
       "home": "TOR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TOR Lean",
+      "home_edge": 5.0,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.877822300884951,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-12",
       "away": "MIA",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "DET Lean",
+      "home_edge": 19.6,
+      "pattern": "nan",
+      "total_edge": 1.817822300884949,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-12",
       "away": "LAA",
       "home": "CIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CIN Lean",
+      "home_edge": 7.1,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.6778123610619531,
+      "final": 15.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-12",
       "away": "ATH",
       "home": "NYM",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "NYM Lean",
+      "home_edge": 9.5,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 2.091669408849551,
+      "final": 1.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-12",
       "away": "NYY",
       "home": "TBR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "NYY Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.543685408849553,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-12",
       "away": "WSN",
       "home": "MIL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "MIL Lean",
+      "home_edge": 17.0,
+      "pattern": "nan",
+      "total_edge": 1.486138962831856,
+      "final": 14.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-12",
       "away": "BOS",
       "home": "STL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "BOS Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.9085776991150478,
+      "final": 12.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-12",
       "away": "COL",
       "home": "SDP",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SDP Lean",
+      "home_edge": 9.3,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -1.04861803716815,
+      "final": 9.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-12",
       "away": "CLE",
       "home": "ATL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ATL Lean",
+      "home_edge": 15.5,
+      "pattern": "nan",
+      "total_edge": 0.5898977469026487,
+      "final": 14.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-13",
       "away": "HOU",
       "home": "SEA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SEA Lean",
+      "home_edge": 5.7,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 0.3658870097345073,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-13",
       "away": "ARI",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ARI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.2555723008849498,
+      "final": 16.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-13",
       "away": "LAA",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "NYY Lean",
+      "home_edge": 6.0,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.1841276991150487,
+      "final": 21.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-13",
       "away": "BOS",
       "home": "MIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "BOS Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.058299192920352,
+      "final": 19.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-13",
       "away": "CLE",
       "home": "STL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "STL Lean",
+      "home_edge": 1.2,
+      "pattern": "nan",
+      "total_edge": -1.794327699115052,
+      "final": 12.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-13",
       "away": "NYM",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAD Lean",
+      "home_edge": 11.1,
+      "pattern": "nan",
+      "total_edge": 0.840217746902649,
+      "final": 4.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-13",
       "away": "TEX",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TEX Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.6211818079645983,
+      "final": 9.0,
+      "result": "Push"
     },
     {
       "date": "2026-04-14",
       "away": "ARI",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "BAL Lean",
+      "home_edge": 0.4,
+      "pattern": "nan",
+      "total_edge": 0.7216723008849506,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-14",
       "away": "KCR",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "KCR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.186622300884949,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-14",
       "away": "SFG",
       "home": "CIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SFG Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.699226361061955,
+      "final": 3.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-14",
       "away": "WSN",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "PIT Lean",
+      "home_edge": 4.5,
+      "pattern": "nan",
+      "total_edge": -2.90923314513275,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-14",
       "away": "TOR",
       "home": "MIL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "MIL Lean",
+      "home_edge": 3.6,
+      "pattern": "nan",
+      "total_edge": 3.247148962831854,
+      "final": 16.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-14",
       "away": "CLE",
       "home": "STL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CLE Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.9606276991150492,
+      "final": 11.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-14",
       "away": "COL",
       "home": "HOU",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "HOU Lean",
+      "home_edge": 0.7,
+      "pattern": "nan",
+      "total_edge": -1.653927699115052,
+      "final": 13.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-14",
       "away": "TEX",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TEX Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.261176692035404,
+      "final": 3.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-14",
       "away": "SEA",
       "home": "SDP",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.320120962831853,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-15",
       "away": "CLE",
       "home": "STL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CLE Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.308927699115051,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-15",
       "away": "KCR",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "DET Lean",
+      "home_edge": 6.8,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.1962276991150489,
+      "final": 3.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-15",
       "away": "CHC",
       "home": "PHI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PHI Lean",
+      "home_edge": 5.4,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.263768746902647,
+      "final": 13.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-15",
       "away": "LAA",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "NYY Lean",
+      "home_edge": 3.2,
+      "pattern": "nan",
+      "total_edge": -3.429227699115053,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-15",
       "away": "MIA",
       "home": "ATL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ATL Lean",
+      "home_edge": 0.3,
+      "pattern": "nan",
+      "total_edge": -0.1765182530973508,
+      "final": 9.0,
+      "result": "Push"
     },
     {
       "date": "2026-04-15",
       "away": "TOR",
       "home": "MIL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.572308962831853,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-15",
       "away": "TEX",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ATH Lean",
+      "home_edge": 6.9,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 0.134261807964597,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-16",
       "away": "KCR",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "KCR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.50937230088495,
+      "final": 19.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-16",
       "away": "TBR",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CHW Lean",
+      "home_edge": 2.0,
+      "pattern": "nan",
+      "total_edge": -0.2788071451327472,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-16",
       "away": "TEX",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ATH Lean",
+      "home_edge": 8.7,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.7818116920354043,
+      "final": 15.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-16",
       "away": "SEA",
       "home": "SDP",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.4008009628318501,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-17",
       "away": "NYM",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CHC Lean",
+      "home_edge": 6.4,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.6022020371681496,
+      "final": 16.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-17",
       "away": "BAL",
       "home": "CLE",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "BAL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.722170037168147,
+      "final": 10.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-17",
       "away": "SFG",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SFG Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.8310297469026491,
+      "final": 15.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-17",
       "away": "KCR",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYY Lean",
+      "home_edge": 8.1,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.290322300884949,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-17",
       "away": "LAD",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAD Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.4333405451327348,
+      "final": 8.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-17",
       "away": "CHW",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "ATH Lean",
+      "home_edge": 4.5,
+      "pattern": "nan",
+      "total_edge": -1.544883192035404,
+      "final": 11.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-17",
       "away": "TEX",
       "home": "SEA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SEA Lean",
+      "home_edge": 5.5,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.591439509734508,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-17",
       "away": "TOR",
       "home": "ARI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.06398563893805,
+      "final": 9.0,
+      "result": "Push"
     },
     {
       "date": "2026-04-20",
       "away": "DET",
       "home": "BOS",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "BOS Lean",
+      "home_edge": 3.6,
+      "pattern": "nan",
+      "total_edge": 2.27626408495575,
+      "final": 14.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-20",
       "away": "STL",
       "home": "MIA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIA Lean",
+      "home_edge": 7.1,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 0.4819897469026486,
+      "final": 8.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-20",
       "away": "ATL",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ATL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.3361257469026526,
+      "final": 13.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-20",
       "away": "PHI",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "PHI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.616817962831851,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-20",
       "away": "LAD",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAD Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.4899874548672667,
+      "final": 15.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-20",
       "away": "ATH",
       "home": "SEA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ATH Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.3840560097345094,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-20",
       "away": "TOR",
       "home": "LAA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.09266374690265,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-21",
       "away": "STL",
       "home": "MIA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "STL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.0841897469026484,
+      "final": 8.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-21",
       "away": "PHI",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PHI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.09018296283185,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-21",
       "away": "BAL",
       "home": "KCR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "KCR Lean",
+      "home_edge": 1.0,
+      "pattern": "nan",
+      "total_edge": -0.0357072530973532,
+      "final": 11.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-21",
       "away": "PIT",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PIT Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.130708037168149,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-21",
       "away": "TOR",
       "home": "LAA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.239613253097351,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-21",
       "away": "CIN",
       "home": "TBR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CIN Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.493939769863012,
+      "final": 18.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-22",
       "away": "TOR",
       "home": "LAA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.847475005479453,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-22",
       "away": "ATH",
       "home": "SEA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SEA Lean",
+      "home_edge": 15.6,
+      "pattern": "nan",
+      "total_edge": 1.363725426027397,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-22",
       "away": "MIL",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "MIL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.743137260273974,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-22",
       "away": "ATL",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "WSN Lean",
+      "home_edge": 5.1,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.1095909945205467,
+      "final": 14.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-22",
       "away": "NYY",
       "home": "BOS",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "NYY Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 4.859290241095893,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-22",
       "away": "PHI",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CHC Lean",
+      "home_edge": 4.1,
+      "pattern": "nan",
+      "total_edge": 1.855653024657531,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-22",
       "away": "PIT",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PIT Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.1715979753424675,
+      "final": 12.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-22",
       "away": "SDP",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "COL Lean",
+      "home_edge": 2.7,
+      "pattern": "nan",
+      "total_edge": -2.663696306849319,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-22",
       "away": "LAD",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAD Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.559727024657533,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-23",
       "away": "MIL",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "DET Lean",
+      "home_edge": 13.4,
+      "pattern": "nan",
+      "total_edge": 3.581387260273976,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-23",
       "away": "PHI",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "PHI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.099508024657533,
+      "final": 15.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-23",
       "away": "SDP",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "COL Lean",
+      "home_edge": 22.9,
+      "pattern": "nan",
+      "total_edge": -3.706576306849319,
+      "final": 18.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-23",
       "away": "CHW",
       "home": "ARI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "ARI Lean",
+      "home_edge": 10.8,
+      "pattern": "nan",
+      "total_edge": 1.413583495890409,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-23",
       "away": "LAD",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAD Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 3.398127024657533,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-23",
       "away": "NYY",
       "home": "BOS",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "NYY Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 4.011084241095897,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-23",
       "away": "PIT",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TEX Lean",
+      "home_edge": 5.4,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 0.4262420246575314,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-24",
       "away": "DET",
       "home": "CIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "DET Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.189022495890409,
+      "final": 17.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-24",
       "away": "BOS",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "BOS Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.377137260273976,
+      "final": 13.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-24",
       "away": "CLE",
       "home": "TOR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TOR Lean",
+      "home_edge": 2.3,
+      "pattern": "nan",
+      "total_edge": 1.594837260273973,
+      "final": 14.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-24",
       "away": "COL",
       "home": "NYM",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYM Lean",
+      "home_edge": 9.8,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.186307769863008,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-24",
       "away": "MIN",
       "home": "TBR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TBR Lean",
+      "home_edge": 2.0,
+      "pattern": "nan",
+      "total_edge": 1.928579769863013,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-24",
       "away": "LAA",
       "home": "KCR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "KCR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -2.11195299452055,
+      "final": 9.0,
+      "result": "Push"
     },
     {
       "date": "2026-04-24",
       "away": "WSN",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "WSN Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -4.168567484931509,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-24",
       "away": "PIT",
       "home": "MIL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "MIL Lean",
+      "home_edge": 3.9,
+      "pattern": "nan",
+      "total_edge": 2.578118024657533,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-24",
       "away": "ATH",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TEX Lean",
+      "home_edge": 11.5,
+      "pattern": "nan",
+      "total_edge": 0.4799960246575328,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-24",
       "away": "NYY",
       "home": "HOU",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYY Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.662537260273972,
+      "final": 16.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-24",
       "away": "SEA",
       "home": "STL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.664887260273971,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-24",
       "away": "CHC",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAD Lean",
+      "home_edge": 8.3,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 2.075559005479453,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-24",
       "away": "MIA",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.9102620246575324,
+      "final": 13.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-25",
       "away": "MIA",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.0352839753424696,
+      "final": 8.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-25",
       "away": "SDP",
       "home": "ARI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "ARI Lean",
+      "home_edge": 6.2,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -5.981688504109592,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-25",
       "away": "ATH",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TEX Lean",
+      "home_edge": 5.3,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.6120349753424659,
+      "final": 7.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-25",
       "away": "NYY",
       "home": "HOU",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "NYY Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.324237260273975,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-25",
       "away": "PIT",
       "home": "MIL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "MIL Lean",
+      "home_edge": 14.5,
+      "pattern": "nan",
+      "total_edge": 1.070518024657533,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-25",
       "away": "DET",
       "home": "CIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "DET Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.1759355041095887,
+      "final": 11.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-25",
       "away": "CHC",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CHC Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.065759005479451,
+      "final": 16.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-25",
       "away": "PHI",
       "home": "ATL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "PHI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 3.051793005479452,
+      "final": 13.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-26",
       "away": "BOS",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "BOS Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.652437260273974,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-26",
       "away": "PHI",
       "home": "ATL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "ATL Lean",
+      "home_edge": 7.4,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 2.68127800547945,
+      "final": 8.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-26",
       "away": "CLE",
       "home": "TOR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TOR Lean",
+      "home_edge": 2.8,
+      "pattern": "nan",
+      "total_edge": 0.6634372602739713,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-26",
       "away": "DET",
       "home": "CIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "DET Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.515455504109589,
+      "final": 11.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-26",
       "away": "COL",
       "home": "NYM",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "NYM Lean",
+      "home_edge": 19.0,
+      "pattern": "nan",
+      "total_edge": -0.0621722301369898,
+      "final": 3.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-26",
       "away": "MIN",
       "home": "TBR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TBR Lean",
+      "home_edge": 14.9,
+      "pattern": "nan",
+      "total_edge": 0.5023397698630117,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-26",
       "away": "WSN",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "WSN Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -2.336886484931507,
+      "final": 3.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-26",
       "away": "NYY",
       "home": "HOU",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "HOU Lean",
+      "home_edge": 2.5,
+      "pattern": "nan",
+      "total_edge": -0.5354627397260288,
+      "final": 11.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-26",
       "away": "PIT",
       "home": "MIL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIL Lean",
+      "home_edge": 3.0,
+      "pattern": "nan",
+      "total_edge": 0.8094940246575337,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-26",
       "away": "SEA",
       "home": "STL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.34088726027397,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-26",
       "away": "ATH",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ATH Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.4517960246575328,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-26",
       "away": "SDP",
       "home": "ARI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "SDP Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -4.49588850410959,
+      "final": 19.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-26",
       "away": "MIA",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "MIA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.558862024657534,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-26",
       "away": "CHC",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "CHC Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.252321005479452,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-27",
       "away": "TBR",
       "home": "CLE",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CLE Lean",
+      "home_edge": 3.7,
+      "pattern": "nan",
+      "total_edge": -1.179110374905898,
+      "final": 5.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-27",
       "away": "STL",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PIT Lean",
+      "home_edge": 4.5,
+      "pattern": "nan",
+      "total_edge": -0.8773143483061485,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-27",
       "away": "BOS",
       "home": "TOR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "TOR Lean",
+      "home_edge": 9.5,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 4.12015066499373,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-27",
       "away": "LAA",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -3.924877348306149,
+      "final": 15.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-27",
       "away": "NYY",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "NYY Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.2017356250941003,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-27",
       "away": "CHC",
       "home": "SDP",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CHC Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.8561636250940996,
+      "final": 16.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-27",
       "away": "MIA",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAD Lean",
+      "home_edge": 9.8,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 2.259776678293603,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-28",
       "away": "TBR",
       "home": "CLE",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CLE Lean",
+      "home_edge": 1.8,
+      "pattern": "nan",
+      "total_edge": 0.0405074823529432,
+      "final": 1.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-28",
       "away": "HOU",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "HOU Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.7577835294117641,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-28",
       "away": "COL",
       "home": "CIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CIN Lean",
+      "home_edge": 16.2,
+      "pattern": "nan",
+      "total_edge": -1.21958254117647,
+      "final": 9.0,
+      "result": "Push"
     },
     {
       "date": "2026-04-28",
       "away": "STL",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PIT Lean",
+      "home_edge": 5.6,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.5915758588235294,
+      "final": 18.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-28",
       "away": "SFG",
       "home": "PHI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PHI Lean",
+      "home_edge": 14.4,
+      "pattern": "nan",
+      "total_edge": 0.0560788000000034,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-28",
       "away": "WSN",
       "home": "NYM",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYM Lean",
+      "home_edge": 0.7,
+      "pattern": "nan",
+      "total_edge": 1.123743811764708,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-28",
       "away": "DET",
       "home": "ATL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "DET Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.5843958000000011,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-28",
       "away": "SEA",
       "home": "MIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.697113129411767,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-28",
       "away": "LAA",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.5583498588235303,
+      "final": 7.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-28",
       "away": "NYY",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "NYY Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.236582482352942,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-28",
       "away": "KCR",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "KCR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.3713410470588219,
+      "final": 5.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-28",
       "away": "CHC",
       "home": "SDP",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CHC Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.8693854823529392,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-28",
       "away": "MIA",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAD Lean",
+      "home_edge": 17.0,
+      "pattern": "nan",
+      "total_edge": 3.002195800000003,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-29",
       "away": "TBR",
       "home": "CLE",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TBR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.076307482352943,
+      "final": 4.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-29",
       "away": "LAA",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -2.820148858823528,
+      "final": 5.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-29",
       "away": "SEA",
       "home": "MIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.210393129411766,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-29",
       "away": "BOS",
       "home": "TOR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TOR Lean",
+      "home_edge": 9.3,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 0.9124164705882388,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-29",
       "away": "MIA",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAD Lean",
+      "home_edge": 12.6,
+      "pattern": "nan",
+      "total_edge": 2.084195800000003,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-29",
       "away": "STL",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PIT Lean",
+      "home_edge": 12.2,
+      "pattern": "nan",
+      "total_edge": -1.23857585882353,
+      "final": 9.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-29",
       "away": "WSN",
       "home": "NYM",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "NYM Lean",
+      "home_edge": 4.3,
+      "pattern": "nan",
+      "total_edge": 0.1349438117647068,
+      "final": 16.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-29",
       "away": "KCR",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "KCR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.5525160470588215,
+      "final": 7.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-30",
       "away": "DET",
       "home": "ATL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ATL Lean",
+      "home_edge": 2.9,
+      "pattern": "nan",
+      "total_edge": 0.0490448000000007,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-30",
       "away": "HOU",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "BAL Lean",
+      "home_edge": 0.8,
+      "pattern": "nan",
+      "total_edge": 7.450216470588234,
+      "final": 16.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-30",
       "away": "STL",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PIT Lean",
+      "home_edge": 12.4,
+      "pattern": "nan",
+      "total_edge": 0.2906241411764698,
+      "final": 15.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-30",
       "away": "SFG",
       "home": "PHI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "PHI Lean",
+      "home_edge": 7.8,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 2.053638800000003,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-30",
       "away": "COL",
       "home": "CIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CIN Lean",
+      "home_edge": 0.6,
+      "pattern": "nan",
+      "total_edge": -1.681159541176472,
+      "final": 10.0,
+      "result": "Loss"
     },
     {
       "date": "2026-04-30",
       "away": "WSN",
       "home": "NYM",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYM Lean",
+      "home_edge": 13.3,
+      "pattern": "nan",
+      "total_edge": 1.244703811764706,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-30",
       "away": "ARI",
       "home": "MIL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "MIL Lean",
+      "home_edge": 3.5,
+      "pattern": "nan",
+      "total_edge": 2.497949482352944,
+      "final": 14.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-30",
       "away": "KCR",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "ATH Lean",
+      "home_edge": 1.5,
+      "pattern": "nan",
+      "total_edge": -2.022418547058821,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-04-30",
       "away": "TOR",
       "home": "MIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.320977129411766,
+      "final": 8.0,
+      "result": "Push"
     },
     {
       "date": "2026-05-01",
       "away": "ARI",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "CHC Lean",
+      "home_edge": 2.0,
+      "pattern": "nan",
+      "total_edge": 2.352075482352943,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-01",
       "away": "TEX",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TEX Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.327116470588237,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-01",
       "away": "CIN",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CIN Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.206431858823528,
+      "final": 10.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-01",
       "away": "MIL",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "MIL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.445114800000002,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-01",
       "away": "BAL",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYY Lean",
+      "home_edge": 6.4,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.76021647058824,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-01",
       "away": "PHI",
       "home": "MIA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "PHI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 2.661158800000003,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-01",
       "away": "TOR",
       "home": "MIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.6031371294117669,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-01",
       "away": "LAD",
       "home": "STL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAD Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.173166470588237,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-01",
       "away": "ATL",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "ATL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -2.865130917647059,
+      "final": 14.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-01",
       "away": "CLE",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CLE Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.5935375470588173,
+      "final": 13.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-01",
       "away": "KCR",
       "home": "SEA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "KCR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.7529606705882363,
+      "final": 13.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-02",
       "away": "BAL",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "NYY Lean",
+      "home_edge": 0.7,
+      "pattern": "nan",
+      "total_edge": 0.6844164705882374,
+      "final": 13.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-02",
       "away": "ARI",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CHC Lean",
+      "home_edge": 6.3,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 1.709289482352943,
+      "final": 2.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-02",
       "away": "CLE",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "ATH Lean",
+      "home_edge": 3.8,
+      "pattern": "nan",
+      "total_edge": -2.215038547058821,
+      "final": 20.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-02",
       "away": "CIN",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PIT Lean",
+      "home_edge": 4.0,
+      "pattern": "nan",
+      "total_edge": -0.3477518588235293,
+      "final": 24.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-02",
       "away": "MIL",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.1354301999999956,
+      "final": 5.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-02",
       "away": "HOU",
       "home": "BOS",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "BOS Lean",
+      "home_edge": 4.0,
+      "pattern": "nan",
+      "total_edge": 1.328841788235302,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-02",
       "away": "SFG",
       "home": "TBR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TBR Lean",
+      "home_edge": 15.1,
+      "pattern": "nan",
+      "total_edge": 1.989375811764706,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-02",
       "away": "LAD",
       "home": "STL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "STL Lean",
+      "home_edge": 6.1,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.2521835294117629,
+      "final": 5.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-02",
       "away": "TEX",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "DET Lean",
+      "home_edge": 1.3,
+      "pattern": "nan",
+      "total_edge": -0.6524835294117626,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-02",
       "away": "ATL",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "ATL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.98238908235294,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-02",
       "away": "CHW",
       "home": "SDP",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SDP Lean",
+      "home_edge": 5.7,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.5827265176470604,
+      "final": 4.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-02",
       "away": "NYM",
       "home": "LAA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "NYM Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.5352238000000007,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-02",
       "away": "KCR",
       "home": "SEA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SEA Lean",
+      "home_edge": 1.6,
+      "pattern": "nan",
+      "total_edge": 0.0956341705882346,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-03",
       "away": "CIN",
       "home": "PIT",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CIN Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.8872481411764692,
+      "final": 1.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-03",
       "away": "MIL",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.0760748000000042,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-03",
       "away": "SFG",
       "home": "TBR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TBR Lean",
+      "home_edge": 8.2,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -1.376368188235292,
+      "final": 3.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-03",
       "away": "PHI",
       "home": "MIA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PHI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.047620800000001,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-03",
       "away": "LAD",
       "home": "STL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAD Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.4241164705882383,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-03",
       "away": "ARI",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "ARI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.986150517647058,
+      "final": 12.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-03",
       "away": "ATL",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "ATL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.64321091764706,
+      "final": 17.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-03",
       "away": "CLE",
       "home": "ATH",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CLE Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.018637547058818,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-03",
       "away": "NYM",
       "home": "LAA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "NYM Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.8090261999999999,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-03",
       "away": "KCR",
       "home": "SEA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "KCR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.5408593294117647,
+      "final": 5.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-03",
       "away": "TEX",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "DET Lean",
+      "home_edge": 3.3,
+      "pattern": "nan",
+      "total_edge": -1.237633529411763,
+      "final": 8.0,
+      "result": "Push"
     },
     {
       "date": "2026-05-04",
       "away": "NYM",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "NYM Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.9131225299412976,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-04",
       "away": "TOR",
       "home": "TBR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.4144178974559685,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-04",
       "away": "PHI",
       "home": "MIA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PHI Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.795724983953034,
+      "final": 1.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-04",
       "away": "BAL",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYY Lean",
+      "home_edge": 11.8,
+      "pattern": "nan",
+      "total_edge": 1.708848023483364,
+      "final": 13.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-04",
       "away": "CLE",
       "home": "KCR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CLE Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.8953880160469687,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-04",
       "away": "MIL",
       "home": "STL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.1917980234833649,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-04",
       "away": "LAD",
       "home": "HOU",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "HOU Lean",
+      "home_edge": 4.6,
+      "pattern": "nan",
+      "total_edge": 1.055398023483367,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-04",
       "away": "CHW",
       "home": "LAA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAA Lean",
+      "home_edge": 2.2,
+      "pattern": "nan",
+      "total_edge": -0.2120510160469689,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-05",
       "away": "TOR",
       "home": "TBR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "TOR Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 3.44484610254403,
+      "final": 7.0,
+      "result": "Push"
     },
     {
       "date": "2026-05-05",
       "away": "ATH",
       "home": "PHI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PHI Lean",
+      "home_edge": 13.4,
+      "pattern": "nan",
+      "total_edge": 0.954177983953036,
+      "final": 10.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-05",
       "away": "BAL",
       "home": "MIA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "BAL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.1685400160469666,
+      "final": 16.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-05",
       "away": "MIN",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIN Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.7091870160469664,
+      "final": 14.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-05",
       "away": "CIN",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CHC Lean",
+      "home_edge": 3.3,
+      "pattern": "nan",
+      "total_edge": 0.0419331420743631,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-05",
       "away": "CLE",
       "home": "KCR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CLE Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.941211983953032,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-05",
       "away": "PIT",
       "home": "ARI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PIT Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.9378540951076316,
+      "final": 9.0,
+      "result": "Push"
     },
     {
       "date": "2026-05-05",
       "away": "ATL",
       "home": "SEA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SEA Lean",
+      "home_edge": 4.8,
+      "pattern": "nan",
+      "total_edge": 0.0011983594911928,
+      "final": 5.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-05",
       "away": "SDP",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SFG Lean",
+      "home_edge": 9.6,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 0.8476681420743617,
+      "final": 15.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-06",
       "away": "LAD",
       "home": "HOU",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "LAD Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.7000480234833653,
+      "final": 14.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-06",
       "away": "ATL",
       "home": "SEA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SEA Lean",
+      "home_edge": 8.9,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -1.056595140508806,
+      "final": 4.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-06",
       "away": "BOS",
       "home": "DET",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "BOS Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.96019802348337,
+      "final": 4.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-06",
       "away": "ATH",
       "home": "PHI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PHI Lean",
+      "home_edge": 16.2,
+      "pattern": "nan",
+      "total_edge": 1.528892983953034,
+      "final": 9.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-06",
       "away": "BAL",
       "home": "MIA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIA Lean",
+      "home_edge": 8.4,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.1195800160469673,
+      "final": 11.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-06",
       "away": "MIN",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "MIN Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -2.059867016046967,
+      "final": 17.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-06",
       "away": "TEX",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYY Lean",
+      "home_edge": 3.8,
+      "pattern": "nan",
+      "total_edge": 1.919798023483365,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-06",
       "away": "CIN",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CHC Lean",
+      "home_edge": 4.6,
+      "pattern": "nan",
+      "total_edge": 0.6945281420743612,
+      "final": 13.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-06",
       "away": "CLE",
       "home": "KCR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "KCR Lean",
+      "home_edge": 8.9,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -1.40514101604697,
+      "final": 4.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-06",
       "away": "NYM",
       "home": "COL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "NYM Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.062237470058703,
+      "final": 15.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-06",
       "away": "PIT",
       "home": "ARI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PIT Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.931561904892366,
+      "final": 1.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-07",
       "away": "TEX",
       "home": "NYY",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "TEX Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 1.378878023483368,
+      "final": 11.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-07",
       "away": "MIN",
       "home": "WSN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "WSN Lean",
+      "home_edge": 3.9,
+      "pattern": "nan",
+      "total_edge": -2.237677416046966,
+      "final": 12.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-07",
       "away": "CLE",
       "home": "KCR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "KCR Lean",
+      "home_edge": 1.7,
+      "pattern": "nan",
+      "total_edge": -1.084822416046967,
+      "final": 13.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-07",
       "away": "CIN",
       "home": "CHC",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "CHC Lean",
+      "home_edge": 15.6,
+      "pattern": "nan",
+      "total_edge": -1.260046657925639,
+      "final": 11.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-07",
       "away": "PIT",
       "home": "ARI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PIT Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.1607892951076337,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-07",
       "away": "BAL",
       "home": "MIA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIA Lean",
+      "home_edge": 2.2,
+      "pattern": "nan",
+      "total_edge": -0.40907641604697,
+      "final": 7.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-07",
       "away": "STL",
       "home": "SDP",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SDP Lean",
+      "home_edge": 9.1,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.7448186579256397,
+      "final": 3.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-08",
       "away": "HOU",
       "home": "CIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CIN Lean",
+      "home_edge": 5.3,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.309134295107631,
+      "final": 10.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-08",
       "away": "COL",
       "home": "PHI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "PHI Lean",
+      "home_edge": 12.9,
+      "pattern": "nan",
+      "total_edge": 2.018872583953033,
+      "final": 16.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-08",
       "away": "ATH",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "BAL Lean",
+      "home_edge": 9.7,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -1.970971976516633,
+      "final": 7.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-08",
       "away": "LAA",
       "home": "TOR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "TOR Lean",
+      "home_edge": 5.6,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 2.440578023483365,
+      "final": 2.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-08",
       "away": "DET",
       "home": "KCR",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "KCR Lean",
+      "home_edge": 2.3,
+      "pattern": "nan",
+      "total_edge": 1.007499583953033,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-08",
       "away": "SEA",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.3187574630136982,
+      "final": 20.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-08",
       "away": "NYY",
       "home": "MIL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "MIL Lean",
+      "home_edge": 9.7,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 3.896036342074364,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-08",
       "away": "CHC",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CHC Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.2493583420743608,
+      "final": 8.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-08",
       "away": "NYM",
       "home": "ARI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "NYM Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 3.645244704892367,
+      "final": 4.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-08",
       "away": "STL",
       "home": "SDP",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SDP Lean",
+      "home_edge": 3.1,
+      "pattern": "nan",
+      "total_edge": 0.2217973420743613,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-08",
       "away": "ATL",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "ATL Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 3.686525583953035,
+      "final": 4.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-08",
       "away": "PIT",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "PIT Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.077141657925637,
+      "final": 7.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-09",
       "away": "ATH",
       "home": "BAL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "BAL Lean",
+      "home_edge": 3.3,
+      "pattern": "nan",
+      "total_edge": -1.272271976516635,
+      "final": 8.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-09",
       "away": "HOU",
       "home": "CIN",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CIN Lean",
+      "home_edge": 19.2,
+      "pattern": "nan",
+      "total_edge": -0.3348962951076349,
+      "final": 4.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-09",
       "away": "WSN",
       "home": "MIA",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIA Lean",
+      "home_edge": 6.9,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.3870954160469662,
+      "final": 15.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-09",
       "away": "COL",
       "home": "PHI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PHI Lean",
+      "home_edge": 6.6,
+      "pattern": "Home Edge 5-10",
+      "total_edge": -0.3518034160469696,
+      "final": 12.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-09",
       "away": "MIN",
       "home": "CLE",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "MIN Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.5506616579256383,
+      "final": 3.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-09",
       "away": "CHC",
       "home": "TEX",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "CHC Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 0.1478383420743636,
+      "final": 6.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-09",
       "away": "SEA",
       "home": "CHW",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Medium",
+      "side": "SEA Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -1.736163536986302,
+      "final": 7.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-09",
       "away": "NYY",
       "home": "MIL",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "NYY Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": 3.560395342074367,
+      "final": 7.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-09",
       "away": "NYM",
       "home": "ARI",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "ARI Lean",
+      "home_edge": 5.1,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 2.719124704892366,
+      "final": 3.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-09",
       "away": "STL",
       "home": "SDP",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "SDP Lean",
+      "home_edge": 2.1,
+      "pattern": "nan",
+      "total_edge": -0.2500026579256387,
+      "final": 6.0,
+      "result": "Win"
     },
     {
       "date": "2026-05-09",
       "away": "PIT",
       "home": "SFG",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "Low",
+      "side": "PIT Lean",
+      "home_edge": 0,
+      "pattern": "nan",
+      "total_edge": -0.1017976579256388,
+      "final": 16.0,
+      "result": "Loss"
     },
     {
       "date": "2026-05-09",
       "away": "ATL",
       "home": "LAD",
-      "signal": "",
-      "final": null,
-      "result": ""
+      "conf": "High",
+      "side": "LAD Lean",
+      "home_edge": 5.6,
+      "pattern": "Home Edge 5-10",
+      "total_edge": 2.745069583953034,
+      "final": 9.0,
+      "result": "Win"
     }
   ],
   "season": {
-    "wins": 0,
-    "total": 0
+    "wins": 154,
+    "total": 290
   }
 }
