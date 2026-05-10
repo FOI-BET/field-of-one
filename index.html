@@ -814,14 +814,17 @@ function mapMkt(m) {
 }
 
 function mapHistory(h) {
+  const conf = (h.conf || '').trim() === 'Medium' ? 'Med' : (h.conf || '').trim();
+  const side = (h.side || '').toLowerCase().includes('over') ? 'Over' : 'Under';
   return {
-    date:      h.date   || '',
-    away:      h.away   || '',
-    home:      h.home   || '',
-    conf:      '',
-    side:      h.signal && h.signal.includes('OVER') ? 'Over' : 'Under',
-    homeEdge:  0,
-    result:    h.result === 'Win' ? 'W' : h.result === 'Loss' ? 'L' : '',
+    date:      h.date      || '',
+    away:      h.away      || '',
+    home:      h.home      || '',
+    conf:      conf,
+    side:      side,
+    homeEdge:  parseFloat(h.home_edge) || 0,
+    pattern:   h.pattern   || '',
+    result:    h.result === 'Win' ? 'W' : h.result === 'Loss' ? 'L' : h.result === 'W' ? 'W' : h.result === 'L' ? 'L' : '',
   };
 }
 
@@ -864,6 +867,12 @@ async function loadData() {
 loadData();
 
 // ── Patterns ───────────────────────────────────────────────────────────────
+function normalizeConf(c) {
+  const s = (c || '').trim();
+  if (s === 'Medium') return 'Med';
+  return s;
+}
+
 const PATTERNS = [
   { name:'Home Edge 5-10', filter: r => r.homeEdge>=5 && r.homeEdge<10 },
   { name:'Home Edge 7-10', filter: r => r.homeEdge>=7 && r.homeEdge<10 },
@@ -1144,4 +1153,3 @@ document.getElementById('patternGrid').innerHTML = PATTERNS.map(p => {
 </script>
 </body>
 </html>
-
