@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-11 10:25",
+  "generated": "2026-05-11 10:29",
   "date": "2026-05-11",
   "desk": [
     {
@@ -15,7 +15,7 @@
       "side": "Under",
       "side_lean": "CLE Lean",
       "home_edge": 2.7,
-      "pattern": "nan",
+      "pattern": "",
       "alignment": "ALIGNED",
       "sharp_action": -1,
       "mkt_signal": "\u26a1 SHARP UNDER (RLM)",
@@ -37,7 +37,7 @@
       "side": "Under",
       "side_lean": "NYY Lean",
       "home_edge": 14.2,
-      "pattern": "nan",
+      "pattern": "",
       "alignment": "MODEL ONLY",
       "sharp_action": 0,
       "mkt_signal": "\ud83d\udc65 PUBLIC OVER",
@@ -59,7 +59,7 @@
       "side": "Over",
       "side_lean": "TOR Lean",
       "home_edge": 2.2,
-      "pattern": "nan",
+      "pattern": "",
       "alignment": "MODEL ONLY",
       "sharp_action": 0,
       "mkt_signal": "\ud83d\udc65 PUBLIC OVER",
@@ -81,7 +81,7 @@
       "side": "Over",
       "side_lean": "TEX Lean",
       "home_edge": 0.7,
-      "pattern": "nan",
+      "pattern": "",
       "alignment": "CONFLICT",
       "sharp_action": -1,
       "mkt_signal": "\u26a1 SHARP UNDER (RLM)",
