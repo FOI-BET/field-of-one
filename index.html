@@ -682,36 +682,19 @@
   <!-- ══ PANEL: RESULTS TRACKER ══ -->
   <div class="panel fade-in" id="panel-history">
 
-    <div class="section-title">10-GAME ROLLING WIN RATE</div>
+    <div class="section-title">SEASON WIN RATE — 20-GAME ROLLING AVERAGE</div>
     <div class="chart-wrap">
-      <canvas id="rollChart" height="200" role="img" aria-label="Rolling 10-game win rate line chart">Rolling win rate over last 60 games.</canvas>
+      <canvas id="rollChart" height="220" role="img" aria-label="Rolling 20-game win rate line chart"></canvas>
     </div>
 
     <div class="section-title">WIN RATE BY CONFIDENCE TIER</div>
     <div class="table-wrap">
       <table id="confTable">
         <thead>
-          <tr><th>TIER</th><th>RECORD</th><th>WIN %</th><th>L30 WIN %</th><th>TREND</th></tr>
+          <tr><th>TIER</th><th>RECORD</th><th>SEASON WIN %</th><th>LAST 30 WIN %</th><th>TREND</th></tr>
         </thead>
         <tbody id="confBody"></tbody>
       </table>
-    </div>
-
-    <div class="section-title">HOME EDGE 5-10 PERFORMANCE</div>
-    <div class="metrics-grid stagger" style="grid-template-columns: repeat(3,1fr);">
-      <div class="metric-card">
-        <div class="metric-label">SAMPLE SIZE</div>
-        <div class="metric-value c-cyan" id="he-sample">42</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-label">RECORD</div>
-        <div class="metric-value c-green" id="he-record">25–17</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-label">WIN RATE</div>
-        <div class="metric-value c-green" id="he-winpct">59.5%</div>
-        <div class="metric-delta">CONFIRMED EDGE ✓</div>
-      </div>
     </div>
 
   </div>
@@ -983,10 +966,7 @@ document.getElementById('t-low').textContent     = DESK_DATA.filter(g=>g.conf===
 document.getElementById('t-pattern').textContent = DESK_DATA.filter(g=>g.pattern).length;
 document.getElementById('m-today').textContent   = DESK_DATA.length;
 
-// HE tracker panel
-document.getElementById('he-sample').textContent = he.length;
-document.getElementById('he-record').textContent = `${heW}–${he.length-heW}`;
-document.getElementById('he-winpct').textContent = he.length>0 ? (heW/he.length*100).toFixed(1)+'%' : '—';
+// HE stats now live in Pattern Lab only
 
 // ── Market table ───────────────────────────────────────────────────────────
 function mlColor(v) {
@@ -1058,45 +1038,88 @@ document.getElementById('confBody').innerHTML = confStats.map(s => `
     <td style="font-family:var(--font-mono);font-size:0.65rem;color:${s.trendColor}">${s.trend}</td>
   </tr>`).join('');
 
-// ── Rolling win rate chart ─────────────────────────────────────────────────
+// ── Rolling win rate chart — 20-game window ────────────────────────────────
+const WINDOW = 20;
 const rollLabels = [];
-const rollData   = [];
-for (let i=9; i<HISTORY.length; i++) {
-  const window = HISTORY.slice(i-9, i+1);
-  const wr = window.filter(r=>r.result==='W').length / 10;
+const rollAll    = [];
+const rollHigh   = [];
+const rollMed    = [];
+
+const highH = HISTORY.filter(r => r.conf === 'High');
+const medH  = HISTORY.filter(r => r.conf === 'Med');
+
+for (let i = WINDOW - 1; i < HISTORY.length; i++) {
+  const w = HISTORY.slice(i - WINDOW + 1, i + 1);
   rollLabels.push(HISTORY[i].date.slice(5));
-  rollData.push(parseFloat((wr*100).toFixed(1)));
+  rollAll.push(parseFloat((w.filter(r=>r.result==='W').length / WINDOW * 100).toFixed(1)));
 }
 
-new Chart(document.getElementById('rollChart'), {
+// Separate rolling for High and Med (smaller datasets, use 10-game window)
+const WIN2 = 10;
+const highLabels = [], medLabels = [];
+const highRoll = [], medRoll = [];
+for (let i = WIN2 - 1; i < highH.length; i++) {
+  const w = highH.slice(i - WIN2 + 1, i + 1);
+  highLabels.push(highH[i].date.slice(5));
+  highRoll.push(parseFloat((w.filter(r=>r.result==='W').length / WIN2 * 100).toFixed(1)));
+}
+for (let i = WIN2 - 1; i < medH.length; i++) {
+  const w = medH.slice(i - WIN2 + 1, i + 1);
+  medLabels.push(medH[i].date.slice(5));
+  medRoll.push(parseFloat((w.filter(r=>r.result==='W').length / WIN2 * 100).toFixed(1)));
+}
+
+if (rollChart) rollChart.destroy();
+rollChart = new Chart(document.getElementById('rollChart'), {
   type: 'line',
   data: {
     labels: rollLabels,
-    datasets: [{
-      label: '10-Game Win Rate',
-      data: rollData,
-      borderColor: '#00e5ff',
-      backgroundColor: 'rgba(0,229,255,0.07)',
-      borderWidth: 1.5,
-      pointRadius: 0,
-      pointHoverRadius: 4,
-      fill: true,
-      tension: 0.4,
-    }, {
-      label: '55% Threshold',
-      data: rollLabels.map(()=>55),
-      borderColor: 'rgba(0,255,136,0.25)',
-      borderWidth: 1,
-      borderDash: [4,4],
-      pointRadius: 0,
-      fill: false,
-    }]
+    datasets: [
+      {
+        label: 'All Games (20-game)',
+        data: rollAll,
+        borderColor: '#00e5ff',
+        backgroundColor: 'rgba(0,229,255,0.06)',
+        borderWidth: 2,
+        pointRadius: 0,
+        pointHoverRadius: 4,
+        fill: true,
+        tension: 0.5,
+      },
+      {
+        label: '50% Break-even',
+        data: rollLabels.map(()=>50),
+        borderColor: 'rgba(255,61,90,0.3)',
+        borderWidth: 1,
+        borderDash: [4,4],
+        pointRadius: 0,
+        fill: false,
+      },
+      {
+        label: '55% Target',
+        data: rollLabels.map(()=>55),
+        borderColor: 'rgba(0,255,136,0.25)',
+        borderWidth: 1,
+        borderDash: [6,3],
+        pointRadius: 0,
+        fill: false,
+      }
+    ]
   },
   options: {
     responsive: true,
     maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
     plugins: {
-      legend: { display: false },
+      legend: {
+        display: true,
+        labels: {
+          color: '#4a7090',
+          font: { family: 'Share Tech Mono', size: 9 },
+          boxWidth: 12,
+          padding: 12,
+        }
+      },
       tooltip: {
         backgroundColor: '#0a1525',
         borderColor: '#0d2a42',
@@ -1104,16 +1127,16 @@ new Chart(document.getElementById('rollChart'), {
         titleColor: '#00e5ff',
         bodyColor: '#c8dae8',
         titleFont: { family: 'Share Tech Mono' },
-        callbacks: { label: ctx => ctx.parsed.y.toFixed(1) + '%' }
+        callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(1) + '%' }
       }
     },
     scales: {
       x: {
-        ticks: { color:'#4a7090', font:{ family:'Share Tech Mono', size:9 }, maxTicksLimit: 12 },
+        ticks: { color:'#4a7090', font:{ family:'Share Tech Mono', size:9 }, maxTicksLimit: 10 },
         grid: { color:'rgba(13,42,66,0.6)' },
       },
       y: {
-        min: 30, max: 80,
+        min: 25, max: 80,
         ticks: { color:'#4a7090', font:{ family:'Share Tech Mono', size:9 }, callback: v => v+'%' },
         grid: { color:'rgba(13,42,66,0.6)' },
       }
