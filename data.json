@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-11 10:51",
+  "generated": "2026-05-11 11:03",
   "date": "2026-05-11",
   "desk": [
     {
@@ -23,12 +23,12 @@
       "l30_wpct": 58.8,
       "l7_wpct": 20.0,
       "play": "Under",
-      "env_score": null,
-      "env_lean": "",
-      "env_temp": null,
-      "env_wind": "",
-      "env_stadium": "",
-      "env_dome": ""
+      "env_score": 0.985,
+      "env_lean": "NEUTRAL",
+      "env_temp": 58.9,
+      "env_wind": "Cross 8mph",
+      "env_stadium": "Progressive Field",
+      "env_dome": "No"
     },
     {
       "date": "2026-05-11",
@@ -51,12 +51,12 @@
       "l30_wpct": 50.0,
       "l7_wpct": 68.2,
       "play": "Under",
-      "env_score": null,
-      "env_lean": "",
-      "env_temp": null,
-      "env_wind": "",
-      "env_stadium": "",
-      "env_dome": ""
+      "env_score": 1.085,
+      "env_lean": "OVER",
+      "env_temp": 60.2,
+      "env_wind": "Cross 6mph (gusts 9mph)",
+      "env_stadium": "Oriole Park",
+      "env_dome": "No"
     },
     {
       "date": "2026-05-11",
@@ -79,12 +79,12 @@
       "l30_wpct": 45.7,
       "l7_wpct": 30.0,
       "play": "Over",
-      "env_score": null,
-      "env_lean": "",
-      "env_temp": null,
-      "env_wind": "",
-      "env_stadium": "",
-      "env_dome": ""
+      "env_score": 0.98,
+      "env_lean": "NEUTRAL",
+      "env_temp": 53.6,
+      "env_wind": "Dome \u2014 weather neutral (gusts 8mph)",
+      "env_stadium": "Rogers Centre",
+      "env_dome": "Yes"
     },
     {
       "date": "2026-05-11",
@@ -3971,7 +3971,86 @@
       "result": "Win"
     }
   ],
-  "env_today": [],
+  "env_today": [
+    {
+      "date": "2026-05-11",
+      "away": "NYY",
+      "home": "BAL",
+      "stadium": "Oriole Park",
+      "env_score": 1.085,
+      "lean": "OVER",
+      "temp": 60.2,
+      "wind": "Cross 6mph (gusts 9mph)",
+      "is_dome": "No",
+      "final": null,
+      "result": ""
+    },
+    {
+      "date": "2026-05-11",
+      "away": "SFG",
+      "home": "LAD",
+      "stadium": "Dodger Stadium",
+      "env_score": 1.085,
+      "lean": "OVER",
+      "temp": 71.4,
+      "wind": "Cross 7mph",
+      "is_dome": "No",
+      "final": null,
+      "result": ""
+    },
+    {
+      "date": "2026-05-11",
+      "away": "AZ",
+      "home": "TEX",
+      "stadium": "Globe Life Field",
+      "env_score": 1.022,
+      "lean": "NEUTRAL",
+      "temp": 68.6,
+      "wind": "Dome \u2014 weather neutral",
+      "is_dome": "Yes",
+      "final": null,
+      "result": ""
+    },
+    {
+      "date": "2026-05-11",
+      "away": "LAA",
+      "home": "CLE",
+      "stadium": "Progressive Field",
+      "env_score": 0.985,
+      "lean": "NEUTRAL",
+      "temp": 58.9,
+      "wind": "Cross 8mph",
+      "is_dome": "No",
+      "final": null,
+      "result": ""
+    },
+    {
+      "date": "2026-05-11",
+      "away": "TBR",
+      "home": "TOR",
+      "stadium": "Rogers Centre",
+      "env_score": 0.98,
+      "lean": "NEUTRAL",
+      "temp": 53.6,
+      "wind": "Dome \u2014 weather neutral (gusts 8mph)",
+      "is_dome": "Yes",
+      "final": null,
+      "result": ""
+    },
+    {
+      "date": "2026-05-11",
+      "away": "SEA",
+      "home": "HOU",
+      "stadium": "Minute Maid Park",
+      "env_score": 0.98,
+      "lean": "NEUTRAL",
+      "temp": 79.3,
+      "wind": "Dome \u2014 weather neutral",
+      "is_dome": "Yes",
+      "final": null,
+      "result": ""
+    }
+  ],
   "env_history": [
     {
       "date": "2026-05-09",
@@ -4336,6 +4415,84 @@
       "is_dome": "No",
       "final": 13,
       "result": "Loss"
+    },
+    {
+      "date": "2026-05-11",
+      "away": "NYY",
+      "home": "BAL",
+      "stadium": "Oriole Park",
+      "env_score": 1.085,
+      "lean": "OVER",
+      "temp": 60.2,
+      "wind": "Cross 6mph (gusts 9mph)",
+      "is_dome": "No",
+      "final": null,
+      "result": ""
+    },
+    {
+      "date": "2026-05-11",
+      "away": "SFG",
+      "home": "LAD",
+      "stadium": "Dodger Stadium",
+      "env_score": 1.085,
+      "lean": "OVER",
+      "temp": 71.4,
+      "wind": "Cross 7mph",
+      "is_dome": "No",
+      "final": null,
+      "result": ""
+    },
+    {
+      "date": "2026-05-11",
+      "away": "AZ",
+      "home": "TEX",
+      "stadium": "Globe Life Field",
+      "env_score": 1.022,
+      "lean": "NEUTRAL",
+      "temp": 68.6,
+      "wind": "Dome \u2014 weather neutral",
+      "is_dome": "Yes",
+      "final": null,
+      "result": ""
+    },
+    {
+      "date": "2026-05-11",
+      "away": "LAA",
+      "home": "CLE",
+      "stadium": "Progressive Field",
+      "env_score": 0.985,
+      "lean": "NEUTRAL",
+      "temp": 58.9,
+      "wind": "Cross 8mph",
+      "is_dome": "No",
+      "final": null,
+      "result": ""
+    },
+    {
+      "date": "2026-05-11",
+      "away": "TBR",
+      "home": "TOR",
+      "stadium": "Rogers Centre",
+      "env_score": 0.98,
+      "lean": "NEUTRAL",
+      "temp": 53.6,
+      "wind": "Dome \u2014 weather neutral (gusts 8mph)",
+      "is_dome": "Yes",
+      "final": null,
+      "result": ""
+    },
+    {
+      "date": "2026-05-11",
+      "away": "SEA",
+      "home": "HOU",
+      "stadium": "Minute Maid Park",
+      "env_score": 0.98,
+      "lean": "NEUTRAL",
+      "temp": 79.3,
+      "wind": "Dome \u2014 weather neutral",
+      "is_dome": "Yes",
+      "final": null,
+      "result": ""
     }
   ],
   "season": {
