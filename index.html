@@ -814,17 +814,20 @@ function mapMkt(m) {
 }
 
 function mapHistory(h) {
-  const conf = (h.conf || '').trim() === 'Medium' ? 'Med' : (h.conf || '').trim();
-  const side = (h.side || '').toLowerCase().includes('over') ? 'Over' : 'Under';
+  let conf = (h.conf || '').trim();
+  if (conf === 'Medium') conf = 'Med';
   return {
     date:      h.date      || '',
     away:      h.away      || '',
     home:      h.home      || '',
     conf:      conf,
-    side:      side,
-    homeEdge:  parseFloat(h.home_edge) || 0,
+    side:      h.side      || 'Under',   // already "Over" or "Under" from push script
+    homeEdge:  parseFloat(h.home_edge)  || 0,
     pattern:   h.pattern   || '',
-    result:    h.result === 'Win' ? 'W' : h.result === 'Loss' ? 'L' : h.result === 'W' ? 'W' : h.result === 'L' ? 'L' : '',
+    result:    h.result === 'Win'  ? 'W' :
+               h.result === 'Loss' ? 'L' :
+               h.result === 'W'    ? 'W' :
+               h.result === 'L'    ? 'L' : '',
   };
 }
 
