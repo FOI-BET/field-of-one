@@ -565,6 +565,7 @@
     <button class="tab" data-panel="market">📊 &nbsp;MARKET DATA</button>
     <button class="tab" data-panel="history">📈 &nbsp;RESULTS TRACKER</button>
     <button class="tab" data-panel="patterns">🔬 &nbsp;PATTERN LAB</button>
+    <button class="tab" data-panel="environment">🌤 &nbsp;ENVIRONMENT</button>
   </div>
 
   <!-- ══ PANEL: MODEL DESK ══ -->
@@ -639,6 +640,8 @@
             <th>MODEL O/U</th>
             <th>EDGE</th>
             <th>HOME EDGE</th>
+            <th>ENV SCORE</th>
+            <th>ENV LEAN</th>
             <th>PATTERN</th>
             <th>ALIGNMENT</th>
             <th>MARKET SIGNAL</th>
@@ -720,6 +723,49 @@
 
   </div>
 
+  <!-- ══ PANEL: ENVIRONMENT ══ -->
+  <div class="panel fade-in" id="panel-environment">
+
+    <div class="section-title">TODAY'S SCORING ENVIRONMENT</div>
+    <div class="table-wrap">
+      <table id="envTable">
+        <thead>
+          <tr>
+            <th>MATCHUP</th>
+            <th>STADIUM</th>
+            <th>ENV SCORE</th>
+            <th>LEAN</th>
+            <th>TEMP</th>
+            <th>WIND</th>
+            <th>DOME</th>
+          </tr>
+        </thead>
+        <tbody id="envBody"></tbody>
+      </table>
+    </div>
+
+    <div class="section-title">HISTORICAL ENVIRONMENT PERFORMANCE</div>
+    <div class="table-wrap">
+      <table id="envHistTable">
+        <thead>
+          <tr><th>ENV LEAN</th><th>SAMPLE</th><th>RECORD</th><th>WIN %</th><th>STATUS</th></tr>
+        </thead>
+        <tbody id="envHistBody"></tbody>
+      </table>
+    </div>
+
+    <div class="section-title">NOTES</div>
+    <div class="notes-box">
+      <ul>
+        <li>Env Score > 1.10 = meaningful scoring boost expected</li>
+        <li>STRONG OVER / STRONG UNDER signals carry most weight</li>
+        <li>Dome games marked N/A — weather neutral by definition</li>
+        <li>Sample size is small early season — patterns building</li>
+      </ul>
+    </div>
+
+  </div>
+
   <footer class="footer">
     <div class="footer-text">FIELD OF ONE &nbsp;·&nbsp; PROPRIETARY MODEL &nbsp;·&nbsp; NOT FINANCIAL ADVICE &nbsp;·&nbsp; EDUCATIONAL PURPOSES ONLY</div>
     <div class="footer-text" id="refreshLabel"></div>
@@ -742,6 +788,8 @@ document.getElementById('refreshLabel').textContent = 'LAST UPDATED · ' +
 let DESK_DATA = [];
 let MKT_DATA  = [];
 let HISTORY   = [];
+let ENV_TODAY    = [];
+let ENV_HISTORY  = [];
 
 function buildDemoHistory() {
   const rng = (seed) => { let s=seed; return () => { s=(s*9301+49297)%233280; return s/233280; }; };
@@ -776,9 +824,12 @@ function mapDesk(d) {
     pattern:    d.pattern     || '',
     alignment:  d.alignment   || '',
     signal:     d.mkt_signal  || '',
-    seasonWpct: parseFloat(d.season_wpct)||0,
-    l30Wpct:    parseFloat(d.l30_wpct)  ||0,
-    l7Wpct:     parseFloat(d.l7_wpct)   ||0,
+    envScore:   d.env_score  || null,
+    envLean:    d.env_lean   || '',
+    envTemp:    d.env_temp   || null,
+    envWind:    d.env_wind   || '',
+    envStadium: d.env_stadium|| '',
+    envDome:    d.env_dome   || '',
   };
 }
 
@@ -823,6 +874,8 @@ async function loadData() {
     DESK_DATA = (json.desk    || []).map(mapDesk);
     MKT_DATA  = (json.market  || []).map(mapMkt);
     HISTORY   = (json.history || []).map(mapHistory).filter(r => r.result === 'W' || r.result === 'L');
+    ENV_TODAY   = json.env_today   || [];
+    ENV_HISTORY = json.env_history || [];
 
     if (json.generated) {
       document.getElementById('refreshLabel').textContent = 'DATA UPDATED · ' + json.generated;
@@ -921,7 +974,15 @@ let rollChart = null;
 
 function renderAll() {
 
-function renderDesk() {
+function envLeanBadge(lean) {
+  if (!lean) return `<span style="color:var(--text-muted)">—</span>`;
+  const l = lean.toUpperCase();
+  if (l.includes('STRONG OVER'))  return `<span class="badge" style="background:rgba(0,255,136,0.15);color:var(--green);border:1px solid rgba(0,255,136,0.3)">STRONG OVER</span>`;
+  if (l.includes('STRONG UNDER')) return `<span class="badge" style="background:rgba(255,61,90,0.12);color:var(--red);border:1px solid rgba(255,61,90,0.25)">STRONG UNDER</span>`;
+  if (l === 'OVER')  return `<span class="badge badge-over">OVER</span>`;
+  if (l === 'UNDER') return `<span class="badge badge-under">UNDER</span>`;
+  return `<span class="badge badge-neutral">NEUTRAL</span>`;
+}
   const tbody = document.getElementById('deskBody');
   const filtered = DESK_DATA.filter(g => activeConf.has(g.conf));
   tbody.innerHTML = filtered.map(g => {
@@ -940,6 +1001,9 @@ function renderDesk() {
         ${g.edge>=0?'+':''}${g.edge.toFixed(1)}</td>
       <td style="font-family:var(--font-mono);color:${g.homeEdge>=5&&g.homeEdge<10?'var(--cyan)':'var(--text-muted)'}">
         ${g.homeEdge}/10</td>
+      <td style="font-family:var(--font-mono);color:${g.envScore>=1.1?'var(--green)':g.envScore>0?'var(--text-muted)':'var(--text-muted)'}">
+        ${g.envScore ? g.envScore.toFixed(3) : '—'}</td>
+      <td>${envLeanBadge(g.envLean)}</td>
       <td>${patCell}</td>
       <td>${alignBadge(g.alignment)}</td>
       <td>${signalText(g.signal)}</td>
@@ -1176,6 +1240,43 @@ document.getElementById('patternGrid').innerHTML = PATTERNS.map(p => {
     </div>
     <div class="status-badge ${status}">${statusText}</div>
   </div>`;
+}).join('');
+
+// ── Environment tab ────────────────────────────────────────────────────────
+// Today's games
+document.getElementById('envBody').innerHTML = ENV_TODAY.length > 0
+  ? ENV_TODAY.map(g => {
+      const scoreColor = g.env_score >= 1.1 ? 'var(--green)' : g.env_score >= 1.05 ? 'var(--cyan)' : 'var(--text-muted)';
+      return `<tr>
+        <td class="matchup-cell">${g.away} <span style="color:var(--text-muted)">@</span> ${g.home}</td>
+        <td style="font-size:0.78rem;color:var(--text-muted)">${g.stadium || '—'}</td>
+        <td style="font-family:var(--font-mono);color:${scoreColor}">${g.env_score ? g.env_score.toFixed(3) : '—'}</td>
+        <td>${envLeanBadge(g.lean)}</td>
+        <td style="font-family:var(--font-mono);color:var(--text-muted)">${g.temp ? g.temp + '°F' : '—'}</td>
+        <td style="font-size:0.75rem;color:var(--text-muted)">${g.wind || '—'}</td>
+        <td style="font-family:var(--font-mono);color:${g.is_dome==='Yes'?'var(--cyan)':'var(--text-muted)'}">${g.is_dome || '—'}</td>
+      </tr>`;
+    }).join('')
+  : `<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:20px;font-family:var(--font-mono);font-size:0.7rem;">NO ENV DATA FOR TODAY — RUN push_to_github.py AFTER ENVIRONMENT MODEL</td></tr>`;
+
+// Historical performance by lean
+const envLeans = ['STRONG OVER','OVER','NEUTRAL','UNDER','STRONG UNDER'];
+document.getElementById('envHistBody').innerHTML = envLeans.map(lean => {
+  const sub = ENV_HISTORY.filter(r => r.lean === lean && (r.result === 'Win' || r.result === 'Loss'));
+  if (sub.length === 0) return '';
+  const w   = sub.filter(r => r.result === 'Win').length;
+  const l   = sub.length - w;
+  const pct = (w / sub.length * 100).toFixed(1);
+  const status = sub.length >= 20 && w/sub.length >= 0.55 ? '✅ CONFIRMED' :
+                 sub.length >= 10 && w/sub.length >= 0.52 ? '⚠️ WATCH' : '🔬 BUILDING';
+  const color = status.includes('CONFIRMED') ? 'var(--green)' : status.includes('WATCH') ? 'var(--amber)' : 'var(--text-muted)';
+  return `<tr>
+    <td>${envLeanBadge(lean)}</td>
+    <td style="font-family:var(--font-mono)">${sub.length}</td>
+    <td style="font-family:var(--font-mono)">${w}–${l}</td>
+    <td style="font-family:var(--font-mono);color:var(--cyan)">${pct}%</td>
+    <td style="font-family:var(--font-mono);font-size:0.65rem;color:${color}">${status}</td>
+  </tr>`;
 }).join('');
 
 } // end renderAll
