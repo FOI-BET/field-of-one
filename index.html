@@ -368,7 +368,7 @@
   /* ══ PATTERN LAB ══ */
   .pattern-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
@@ -877,12 +877,16 @@ function normalizeConf(c) {
 }
 
 const PATTERNS = [
-  { name:'Home Edge 5-10', filter: r => r.homeEdge>=5 && r.homeEdge<10 },
-  { name:'Home Edge 7-10', filter: r => r.homeEdge>=7 && r.homeEdge<10 },
-  { name:'High Conf Only', filter: r => r.conf==='High' },
-  { name:'High Conf Over', filter: r => r.conf==='High' && r.side==='Over' },
-  { name:'High Conf Under',filter: r => r.conf==='High' && r.side==='Under' },
-  { name:'Low Conf Under', filter: r => r.conf==='Low'  && r.side==='Under' },
+  { name:'Home Edge 5-10',   filter: r => r.homeEdge>=5 && r.homeEdge<10 },
+  { name:'Home Edge 7-10',   filter: r => r.homeEdge>=7 && r.homeEdge<10 },
+  { name:'High Conf Only',   filter: r => r.conf==='High' },
+  { name:'High Conf Over',   filter: r => r.conf==='High' && r.side==='Over' },
+  { name:'High Conf Under',  filter: r => r.conf==='High' && r.side==='Under' },
+  { name:'Med Conf Only',    filter: r => r.conf==='Med' },
+  { name:'Med Conf Over',    filter: r => r.conf==='Med'  && r.side==='Over' },
+  { name:'Med Conf Under',   filter: r => r.conf==='Med'  && r.side==='Under' },
+  { name:'Low Conf Only',    filter: r => r.conf==='Low' },
+  { name:'Low Conf Under',   filter: r => r.conf==='Low'  && r.side==='Under' },
 ];
 
 // ── Tab switching ──────────────────────────────────────────────────────────
