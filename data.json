@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-11 10:09",
+  "generated": "2026-05-11 10:15",
   "date": "2026-05-11",
   "desk": [
     {
@@ -267,7 +267,92 @@
       "play": "Over"
     }
   ],
-  "market": [],
+  "market": [
+    {
+      "date": "2026-05-11",
+      "away": "LAA",
+      "home": "CLE",
+      "away_ml": 144,
+      "home_ml": -175,
+      "total": 7.5,
+      "open_total": 8.0,
+      "move": "-0.5",
+      "bet_over": 81,
+      "money_over": 80,
+      "signal": "\u26a1 SHARP UNDER (RLM)",
+      "sides_signal": "NEUTRAL"
+    },
+    {
+      "date": "2026-05-11",
+      "away": "NYY",
+      "home": "BAL",
+      "away_ml": -163,
+      "home_ml": 135,
+      "total": 9.0,
+      "open_total": 9.0,
+      "move": "FLAT",
+      "bet_over": 83,
+      "money_over": 86,
+      "signal": "\ud83d\udc65 PUBLIC OVER",
+      "sides_signal": "NEUTRAL"
+    },
+    {
+      "date": "2026-05-11",
+      "away": "TBR",
+      "home": "TOR",
+      "away_ml": 109,
+      "home_ml": -131,
+      "total": 7.5,
+      "open_total": 7.5,
+      "move": "FLAT",
+      "bet_over": 74,
+      "money_over": 70,
+      "signal": "\ud83d\udc65 PUBLIC OVER",
+      "sides_signal": "NEUTRAL"
+    },
+    {
+      "date": "2026-05-11",
+      "away": "ARI",
+      "home": "TEX",
+      "away_ml": 109,
+      "home_ml": -131,
+      "total": 7.5,
+      "open_total": 8.0,
+      "move": "-0.5",
+      "bet_over": 78,
+      "money_over": 77,
+      "signal": "\u26a1 SHARP UNDER (RLM)",
+      "sides_signal": "NEUTRAL"
+    },
+    {
+      "date": "2026-05-11",
+      "away": "SEA",
+      "home": "HOU",
+      "away_ml": -143,
+      "home_ml": 119,
+      "total": 8.5,
+      "open_total": 8.5,
+      "move": "FLAT",
+      "bet_over": 58,
+      "money_over": 73,
+      "signal": "\ud83d\udc65 PUBLIC OVER",
+      "sides_signal": "NEUTRAL"
+    },
+    {
+      "date": "2026-05-11",
+      "away": "SFG",
+      "home": "LAD",
+      "away_ml": 159,
+      "home_ml": -194,
+      "total": 9.5,
+      "open_total": 9.5,
+      "move": "FLAT",
+      "bet_over": 48,
+      "money_over": 49,
+      "signal": "NEUTRAL",
+      "sides_signal": "\ud83d\udcca HOME ML MOVE"
+    }
+  ],
   "history": [
     {
       "date": "2026-04-04",
