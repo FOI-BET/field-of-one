@@ -726,9 +726,7 @@
         <thead>
           <tr>
             <th>MATCHUP</th>
-            <th>OPEN AWAY</th>
             <th>AWAY ML</th>
-            <th>OPEN HOME</th>
             <th>HOME ML</th>
             <th>TOTAL</th>
             <th>LINE MOVE</th>
@@ -919,15 +917,12 @@ function mapDesk(d) {
 }
 function mapMkt(m) {
   return {
-    away:        m.away||'',       home:        m.home||'',
-    openAwayML:  m.open_away_ml||null,
-    awayML:      m.away_ml||null,
-    openHomeML:  m.open_home_ml||null,
-    homeML:      m.home_ml||null,
-    total:       m.total,          move:        m.move||'FLAT',
-    betO:        parseFloat(m.bet_over)||0,
-    monO:        parseFloat(m.money_over)||0,
-    signal:      m.signal||'',
+    away:   m.away||'', home:    m.home||'',
+    awayML: m.away_ml,  homeML:  m.home_ml,
+    total:  m.total,    move:    m.move||'FLAT',
+    betO:   parseFloat(m.bet_over)||0,
+    monO:   parseFloat(m.money_over)||0,
+    signal: m.signal||'',
   };
 }
 function mapHistory(h) {
@@ -981,13 +976,6 @@ async function loadData() {
       {away:'WSN',home:'MIA',conf:'Low',side:'Under',modelTotal:8.44,edge:-0.06,homeEdge:2.1,pattern:'',alignment:'MODEL ONLY',signal:'PUBLIC',envScore:null,envLean:'',envTemp:null,envWind:'',envStadium:'',envDome:''},
       {away:'ATL',home:'LAD',conf:'High',side:'Over',modelTotal:10.76,edge:2.26,homeEdge:0.1,pattern:'',alignment:'ALIGNED',signal:'SHARP OVER (RLM)',envScore:1.083,envLean:'OVER',envTemp:69,envWind:'Cross 9mph',envStadium:'Dodger Stadium',envDome:'No'},
       {away:'CHC',home:'MIL',conf:'Med',side:'Over',modelTotal:9.2,edge:0.7,homeEdge:6,pattern:'Home Edge 5-10',alignment:'MODEL ONLY',signal:'NEUTRAL',envScore:1.04,envLean:'NEUTRAL',envTemp:64,envWind:'Dome',envStadium:'American Family Field',envDome:'Yes'},
-    ];
-    MKT_DATA = [
-      {away:'ATL', home:'LAD', openAwayML:'+118', awayML:'+104',  openHomeML:'-138', homeML:'-126', total:8.5,  move:'-0.5', betO:86, monO:88, signal:'⚡ SHARP UNDER (RLM)'},
-      {away:'CHC', home:'MIL', openAwayML:'+102', awayML:'+102',  openHomeML:'-122', homeML:'-122', total:9.0,  move:'FLAT', betO:70, monO:75, signal:'PUBLIC OVER'},
-      {away:'WSN', home:'MIA', openAwayML:'+155', awayML:'+148',  openHomeML:'-185', homeML:'-178', total:8.0,  move:'FLAT', betO:55, monO:52, signal:'NEUTRAL'},
-      {away:'NYY', home:'BAL', openAwayML:'-172', awayML:'-168',  openHomeML:'+144', homeML:'+139', total:9.0,  move:'+0.5', betO:78, monO:81, signal:'🌊 PUBLIC STEAM OVER'},
-      {away:'STL', home:'ATH', openAwayML:'+138', awayML:'+129',  openHomeML:'-162', homeML:'-156', total:10.5, move:'FLAT', betO:56, monO:65, signal:'NEUTRAL'},
     ];
     HISTORY = buildDemoHistory();
     ENV_TODAY = [];
@@ -1083,10 +1071,8 @@ function renderMarket() {
   document.getElementById('mktBody').innerHTML = MKT_DATA.map(g => {
     return `<tr class="${g.signal.includes('SHARP')?'sharp-row':''}">
       <td class="matchup-cell">${g.away} <span style="color:var(--text-muted)">@</span> ${g.home}</td>
-      <td style="font-family:var(--font-mono);color:var(--text-muted);font-size:0.78rem">${mlFmt(g.openAwayML)}</td>
-      <td style="font-family:var(--font-mono);color:${g.openAwayML&&g.awayML&&g.openAwayML!==g.awayML?'var(--amber)':mlColor(g.awayML)}">${mlFmt(g.awayML)}</td>
-      <td style="font-family:var(--font-mono);color:var(--text-muted);font-size:0.78rem">${mlFmt(g.openHomeML)}</td>
-      <td style="font-family:var(--font-mono);color:${g.openHomeML&&g.homeML&&g.openHomeML!==g.homeML?'var(--amber)':mlColor(g.homeML)}">${mlFmt(g.homeML)}</td>
+      <td style="font-family:var(--font-mono);color:${mlColor(g.awayML)}">${mlFmt(g.awayML)}</td>
+      <td style="font-family:var(--font-mono);color:${mlColor(g.homeML)}">${mlFmt(g.homeML)}</td>
       <td style="font-family:var(--font-mono);color:var(--cyan)">${g.total||'—'}</td>
       <td style="font-family:var(--font-mono);color:${moveColor(g.move)}">${g.move}</td>
       <td style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">${g.betO}% / ${100-g.betO}%</td>
