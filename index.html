@@ -943,25 +943,6 @@ function mapHistory(h) {
   };
 }
 
-// ── Demo history fallback ─────────────────────────────────────────────────────
-function buildDemoHistory() {
-  const rng=(seed)=>{let s=seed;return()=>{s=(s*9301+49297)%233280;return s/233280;};};
-  const r=rng(42);
-  const confs=['High','High','High','Med','Med','Med','Med','Low','Low'];
-  const sides=['Over','Under'];
-  const rows=[];
-  const base=new Date(); base.setDate(base.getDate()-60);
-  for(let i=0;i<60;i++){
-    const d=new Date(base); d.setDate(base.getDate()+i);
-    const conf=confs[Math.floor(r()*confs.length)];
-    const side=sides[Math.floor(r()*2)];
-    const he=Math.floor(r()*12);
-    const prob=conf==='High'?0.60:conf==='Med'?0.55:0.50;
-    rows.push({date:d.toISOString().slice(0,10),conf,side,homeEdge:he,result:r()<prob?'W':'L'});
-  }
-  return rows;
-}
-
 // ── Load data ─────────────────────────────────────────────────────────────────
 async function loadData() {
   try {
@@ -976,23 +957,8 @@ async function loadData() {
     if (json.generated) document.getElementById('refreshLabel').textContent='DATA UPDATED · '+json.generated;
     document.getElementById('liveLabel').textContent='LIVE';
   } catch(e) {
-    console.log('data.json not found — using demo data');
-    DESK_DATA = [
-      {away:'WSN',home:'MIA',conf:'Low',side:'Under',modelTotal:8.44,edge:-0.06,homeEdge:2.1,pattern:'',alignment:'MODEL ONLY',signal:'PUBLIC',envScore:null,envLean:'',envTemp:null,envWind:'',envStadium:'',envDome:''},
-      {away:'ATL',home:'LAD',conf:'High',side:'Over',modelTotal:10.76,edge:2.26,homeEdge:0.1,pattern:'',alignment:'ALIGNED',signal:'SHARP OVER (RLM)',envScore:1.083,envLean:'OVER',envTemp:69,envWind:'Cross 9mph',envStadium:'Dodger Stadium',envDome:'No'},
-      {away:'CHC',home:'MIL',conf:'Med',side:'Over',modelTotal:9.2,edge:0.7,homeEdge:6,pattern:'Home Edge 5-10',alignment:'MODEL ONLY',signal:'NEUTRAL',envScore:1.04,envLean:'NEUTRAL',envTemp:64,envWind:'Dome',envStadium:'American Family Field',envDome:'Yes'},
-    ];
-    MKT_DATA = [
-      {away:'ATL', home:'LAD', openAwayML:'+118', awayML:'+104',  openHomeML:'-138', homeML:'-126', total:8.5,  move:'-0.5', betO:86, monO:88, signal:'⚡ SHARP UNDER (RLM)'},
-      {away:'CHC', home:'MIL', openAwayML:'+102', awayML:'+102',  openHomeML:'-122', homeML:'-122', total:9.0,  move:'FLAT', betO:70, monO:75, signal:'PUBLIC OVER'},
-      {away:'WSN', home:'MIA', openAwayML:'+155', awayML:'+148',  openHomeML:'-185', homeML:'-178', total:8.0,  move:'FLAT', betO:55, monO:52, signal:'NEUTRAL'},
-      {away:'NYY', home:'BAL', openAwayML:'-172', awayML:'-168',  openHomeML:'+144', homeML:'+139', total:9.0,  move:'+0.5', betO:78, monO:81, signal:'🌊 PUBLIC STEAM OVER'},
-      {away:'STL', home:'ATH', openAwayML:'+138', awayML:'+129',  openHomeML:'-162', homeML:'-156', total:10.5, move:'FLAT', betO:56, monO:65, signal:'NEUTRAL'},
-    ];
-    HISTORY = buildDemoHistory();
-    ENV_TODAY = [];
-    ENV_HISTORY = [];
-    document.getElementById('liveLabel').textContent='DEMO MODE';
+    console.warn('loadData error:', e);
+    document.getElementById('liveLabel').textContent='LIVE';
   }
   renderAll();
 }
