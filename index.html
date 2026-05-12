@@ -499,6 +499,51 @@
     font-size: 0.65rem;
   }
 
+  /* ══ SOCIAL LINKS ══ */
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+
+  .social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.15s;
+    border: 1px solid;
+  }
+
+  .social-btn-x {
+    color: #fff;
+    border-color: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.05);
+  }
+
+  .social-btn-x:hover {
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.4);
+  }
+
+  .social-btn-juice {
+    color: var(--cyan);
+    border-color: rgba(0,229,255,0.25);
+    background: rgba(0,229,255,0.06);
+  }
+
+  .social-btn-juice:hover {
+    background: rgba(0,229,255,0.12);
+    border-color: rgba(0,229,255,0.5);
+    box-shadow: 0 0 12px rgba(0,229,255,0.15);
+  }
+
   /* ══ FOOTER ══ */
   .footer {
     border-top: 1px solid var(--border);
@@ -542,6 +587,14 @@
   .split-val { font-family: var(--font-mono); font-size: 0.7rem; width: 36px; text-align: right; }
 
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-19WMK04K5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-19WMK04K5G');
+</script>
 </head>
 <body>
 
@@ -556,6 +609,16 @@
     <div class="header-right">
       <div><span class="live-dot"></span><span class="live-label" id="liveLabel">LOADING...</span></div>
       <div class="date-label" id="dateLabel"></div>
+      <div class="social-links">
+        <a href="https://x.com/fieldofone" target="_blank" class="social-btn social-btn-x">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          @FIELDOFONE
+        </a>
+        <a href="https://links.juicereel.com/profile/FieldofOne?cmpn=grow" target="_blank" class="social-btn social-btn-juice">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          JUICE REEL
+        </a>
+      </div>
     </div>
   </header>
 
@@ -768,7 +831,11 @@
 
   <footer class="footer">
     <div class="footer-text">FIELD OF ONE &nbsp;·&nbsp; PROPRIETARY MODEL &nbsp;·&nbsp; NOT FINANCIAL ADVICE &nbsp;·&nbsp; EDUCATIONAL PURPOSES ONLY</div>
-    <div class="footer-text" id="refreshLabel"></div>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <a href="https://x.com/fieldofone" target="_blank" style="font-family:var(--font-mono);font-size:0.55rem;color:#1a3a52;text-decoration:none;letter-spacing:0.15em;transition:color 0.15s;" onmouseover="this.style.color='#00e5ff'" onmouseout="this.style.color='#1a3a52'">X @FIELDOFONE</a>
+      <a href="https://links.juicereel.com/profile/FieldofOne?cmpn=grow" target="_blank" style="font-family:var(--font-mono);font-size:0.55rem;color:#1a3a52;text-decoration:none;letter-spacing:0.15em;transition:color 0.15s;" onmouseover="this.style.color='#00e5ff'" onmouseout="this.style.color='#1a3a52'">JUICE REEL</a>
+      <div class="footer-text" id="refreshLabel"></div>
+    </div>
   </footer>
 
 </div>
