@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12 18:26",
+  "generated": "2026-05-12 18:31",
   "date": "2026-05-12",
   "desk": [
     {
@@ -158,7 +158,7 @@
       "pattern": "",
       "alignment": "MODEL ONLY",
       "sharp_action": 0,
-      "mkt_signal": "nan",
+      "mkt_signal": "",
       "season_wpct": 63.8,
       "l30_wpct": 67.3,
       "l7_wpct": 54.5,
@@ -355,10 +355,10 @@
       "sides_signal": "\u2014",
       "total": 8.5,
       "open_total": null,
-      "move": "nan",
+      "move": "FLAT",
       "bet_over": 82,
       "money_over": 79,
-      "signal": "nan"
+      "signal": ""
     },
     {
       "date": "2026-05-12",
@@ -375,10 +375,10 @@
       "sides_signal": "\u26a1 SHARP AWAY (ML RLM)",
       "total": 8.5,
       "open_total": null,
-      "move": "nan",
+      "move": "FLAT",
       "bet_over": 87,
       "money_over": 90,
-      "signal": "nan"
+      "signal": ""
     },
     {
       "date": "2026-05-12",
@@ -395,10 +395,10 @@
       "sides_signal": "\u2261 AWAY ML MOVE",
       "total": 10.0,
       "open_total": null,
-      "move": "nan",
+      "move": "FLAT",
       "bet_over": 80,
       "money_over": 87,
-      "signal": "nan"
+      "signal": ""
     },
     {
       "date": "2026-05-12",
@@ -415,10 +415,10 @@
       "sides_signal": "\u2014",
       "total": 7.5,
       "open_total": null,
-      "move": "nan",
+      "move": "FLAT",
       "bet_over": 88,
       "money_over": 81,
-      "signal": "nan"
+      "signal": ""
     },
     {
       "date": "2026-05-12",
@@ -435,10 +435,10 @@
       "sides_signal": "\u2261 HOME ML MOVE",
       "total": 8.0,
       "open_total": null,
-      "move": "nan",
+      "move": "FLAT",
       "bet_over": 76,
       "money_over": 71,
-      "signal": "nan"
+      "signal": ""
     },
     {
       "date": "2026-05-12",
@@ -455,10 +455,10 @@
       "sides_signal": "\u2261 HOME ML MOVE",
       "total": 8.0,
       "open_total": null,
-      "move": "nan",
+      "move": "FLAT",
       "bet_over": 78,
       "money_over": 59,
-      "signal": "nan"
+      "signal": ""
     },
     {
       "date": "2026-05-12",
@@ -475,10 +475,10 @@
       "sides_signal": "\u2014",
       "total": 7.5,
       "open_total": null,
-      "move": "nan",
+      "move": "FLAT",
       "bet_over": 92,
       "money_over": 81,
-      "signal": "nan"
+      "signal": ""
     },
     {
       "date": "2026-05-12",
