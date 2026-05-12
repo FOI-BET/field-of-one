@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12 11:00",
+  "generated": "2026-05-12 11:12",
   "date": "2026-05-12",
   "desk": [
     {
@@ -456,7 +456,7 @@
       "date": "2026-05-12",
       "away": "CHC",
       "home": "ATL",
-      "away_ml": NaN,
+      "away_ml": null,
       "home_ml": -120,
       "open_away_ml": -115,
       "open_home_ml": -122.0,
@@ -507,7 +507,7 @@
       "away_ml": -108.0,
       "home_ml": -112,
       "open_away_ml": -115,
-      "open_home_ml": NaN,
+      "open_home_ml": null,
       "total": 9.0,
       "open_total": 9.0,
       "move": "FLAT",
