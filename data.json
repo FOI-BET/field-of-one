@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12 11:48",
+  "generated": "2026-05-12 12:19",
   "date": "2026-05-12",
   "desk": [
     {
@@ -100,9 +100,9 @@
       "side_lean": "PHI Lean",
       "home_edge": 23.5,
       "pattern": "",
-      "alignment": "MODEL ONLY",
-      "sharp_action": 0,
-      "mkt_signal": "\ud83d\udc65 PUBLIC OVER",
+      "alignment": "CONFLICT",
+      "sharp_action": -1,
+      "mkt_signal": "\u26a1 SHARP UNDER (RLM)",
       "season_wpct": 47.2,
       "l30_wpct": 46.7,
       "l7_wpct": 36.4,
@@ -346,15 +346,15 @@
       "home": "CLE",
       "away_ml": 119,
       "home_ml": -143,
-      "open_away_ml": -112,
-      "open_home_ml": -136.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 8.5,
       "open_total": 8.5,
       "move": "FLAT",
       "bet_over": 81,
-      "money_over": 73,
+      "money_over": 75,
       "signal": "\ud83d\udc65 PUBLIC OVER",
-      "sides_signal": "NEUTRAL"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -362,15 +362,15 @@
       "home": "BAL",
       "away_ml": -149,
       "home_ml": 123,
-      "open_away_ml": -166,
-      "open_home_ml": -115.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 8.5,
       "open_total": 9.0,
       "move": "-0.5",
       "bet_over": 81,
       "money_over": 90,
       "signal": "\u26a1 SHARP UNDER (RLM)",
-      "sides_signal": "NEUTRAL"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -378,15 +378,15 @@
       "home": "PIT",
       "away_ml": 273,
       "home_ml": -349,
-      "open_away_ml": -118,
-      "open_home_ml": -328.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 7.5,
       "open_total": 7.5,
       "move": "FLAT",
       "bet_over": 84,
       "money_over": 83,
       "signal": "\ud83d\udc65 PUBLIC OVER",
-      "sides_signal": "\ud83d\udcca HOME ML MOVE"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -394,15 +394,15 @@
       "home": "CIN",
       "away_ml": 119,
       "home_ml": -143,
-      "open_away_ml": -118,
-      "open_home_ml": -143.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 10.0,
       "open_total": 9.5,
       "move": "+0.5",
       "bet_over": 78,
-      "money_over": 88,
+      "money_over": 89,
       "signal": "\ud83c\udf0a PUBLIC STEAM OVER",
-      "sides_signal": "NEUTRAL"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -410,15 +410,15 @@
       "home": "BOS",
       "away_ml": -143,
       "home_ml": 119,
-      "open_away_ml": -143,
-      "open_home_ml": -118.0,
-      "total": 8.5,
+      "open_away_ml": null,
+      "open_home_ml": null,
+      "total": 8.0,
       "open_total": 8.5,
-      "move": "FLAT",
+      "move": "-0.5",
       "bet_over": 73,
-      "money_over": 71,
-      "signal": "\ud83d\udc65 PUBLIC OVER",
-      "sides_signal": "NEUTRAL"
+      "money_over": 72,
+      "signal": "\u26a1 SHARP UNDER (RLM)",
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -426,15 +426,15 @@
       "home": "TOR",
       "away_ml": -115,
       "home_ml": -105,
-      "open_away_ml": -118,
-      "open_home_ml": -115.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 8.0,
       "open_total": 8.0,
       "move": "FLAT",
-      "bet_over": 79,
+      "bet_over": 78,
       "money_over": 64,
       "signal": "NEUTRAL",
-      "sides_signal": "NEUTRAL"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -442,15 +442,15 @@
       "home": "NYM",
       "away_ml": 123,
       "home_ml": -149,
-      "open_away_ml": -118,
-      "open_home_ml": -149.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 7.5,
       "open_total": 7.5,
       "move": "FLAT",
       "bet_over": 85,
-      "money_over": 82,
+      "money_over": 80,
       "signal": "\ud83d\udc65 PUBLIC OVER",
-      "sides_signal": "NEUTRAL"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -458,15 +458,15 @@
       "home": "ATL",
       "away_ml": 102,
       "home_ml": -122,
-      "open_away_ml": -115,
-      "open_home_ml": -122.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 8.5,
       "open_total": 9.0,
       "move": "-0.5",
       "bet_over": 68,
       "money_over": 66,
       "signal": "\u26a1 SHARP UNDER (RLM)",
-      "sides_signal": "NEUTRAL"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -474,15 +474,15 @@
       "home": "MIL",
       "away_ml": 109,
       "home_ml": -131,
-      "open_away_ml": -118,
-      "open_home_ml": -126.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 8.5,
       "open_total": 8.5,
       "move": "FLAT",
       "bet_over": 83,
       "money_over": 90,
       "signal": "\ud83d\udc65 PUBLIC OVER",
-      "sides_signal": "NEUTRAL"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -490,15 +490,15 @@
       "home": "CHW",
       "away_ml": -126,
       "home_ml": 104,
-      "open_away_ml": -126,
-      "open_home_ml": -112.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 9.5,
       "open_total": 9.0,
       "move": "+0.5",
-      "bet_over": 70,
-      "money_over": 72,
+      "bet_over": 69,
+      "money_over": 69,
       "signal": "\ud83c\udf0a PUBLIC STEAM OVER",
-      "sides_signal": "NEUTRAL"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -506,7 +506,7 @@
       "home": "MIN",
       "away_ml": -108,
       "home_ml": -112,
-      "open_away_ml": -115,
+      "open_away_ml": null,
       "open_home_ml": null,
       "total": 9.0,
       "open_total": 9.0,
@@ -522,15 +522,15 @@
       "home": "TEX",
       "away_ml": 104,
       "home_ml": -126,
-      "open_away_ml": -117,
-      "open_home_ml": -143.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 8.0,
       "open_total": 8.0,
       "move": "FLAT",
       "bet_over": 73,
       "money_over": 60,
       "signal": "NEUTRAL",
-      "sides_signal": "NEUTRAL"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -538,15 +538,15 @@
       "home": "HOU",
       "away_ml": -171,
       "home_ml": 141,
-      "open_away_ml": -149,
-      "open_home_ml": -102.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 9.0,
       "open_total": 8.5,
       "move": "+0.5",
-      "bet_over": 80,
-      "money_over": 87,
+      "bet_over": 79,
+      "money_over": 86,
       "signal": "\ud83c\udf0a PUBLIC STEAM OVER",
-      "sides_signal": "\u26a1 SHARP AWAY (ML RLM)"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
@@ -554,31 +554,31 @@
       "home": "ATH",
       "away_ml": 129,
       "home_ml": -156,
-      "open_away_ml": -105,
-      "open_home_ml": -149.0,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 10.0,
       "open_total": 10.5,
       "move": "-0.5",
       "bet_over": 54,
       "money_over": 58,
       "signal": "NEUTRAL",
-      "sides_signal": "NEUTRAL"
+      "sides_signal": "nan"
     },
     {
       "date": "2026-05-12",
       "away": "SFG",
       "home": "LAD",
-      "away_ml": 248,
-      "home_ml": -314,
-      "open_away_ml": 101,
-      "open_home_ml": -286.0,
+      "away_ml": 258,
+      "home_ml": -328,
+      "open_away_ml": null,
+      "open_home_ml": null,
       "total": 9.0,
       "open_total": 9.0,
       "move": "FLAT",
       "bet_over": 75,
       "money_over": 77,
       "signal": "\ud83d\udc65 PUBLIC OVER",
-      "sides_signal": "\ud83d\udcca HOME ML MOVE"
+      "sides_signal": "nan"
     }
   ],
   "history": [
