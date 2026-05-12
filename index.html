@@ -968,9 +968,9 @@ async function loadData() {
     const resp = await fetch('data.json?t='+Date.now());
     if (!resp.ok) throw new Error('data.json not found');
     const json = await resp.json();
-    DESK_DATA   = (json.desk||[]).map(mapDesk);
-    MKT_DATA    = (json.market||[]).map(mapMkt);
-    HISTORY     = (json.history||[]).map(mapHistory).filter(r=>r.result==='W'||r.result==='L');
+    try { DESK_DATA = (json.desk||[]).map(mapDesk); } catch(e2) { console.warn('desk map error',e2); DESK_DATA=[]; }
+    try { MKT_DATA  = (json.market||[]).map(mapMkt); } catch(e2) { console.warn('mkt map error',e2); MKT_DATA=[]; }
+    try { HISTORY   = (json.history||[]).map(mapHistory).filter(r=>r.result==='W'||r.result==='L'); } catch(e2) { console.warn('history map error',e2); HISTORY=[]; }
     ENV_TODAY   = json.env_today||[];
     ENV_HISTORY = json.env_history||[];
     if (json.generated) document.getElementById('refreshLabel').textContent='DATA UPDATED · '+json.generated;
