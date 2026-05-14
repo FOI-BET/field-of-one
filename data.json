@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-13 09:56",
-  "date": "2026-05-13",
+  "generated": "2026-05-14 14:31",
+  "date": "2026-05-14",
   "desk": [
     {
       "date": "2026-05-13",
@@ -353,12 +353,12 @@
       "away_rl_juice": 145,
       "home_rl_juice": -170.0,
       "sides_signal": "\u2261 HOME ML MOVE",
-      "total": 9.0,
+      "total": 8.5,
       "open_total": 9.0,
-      "move": "FLAT",
-      "bet_over": 69.0,
-      "money_over": 64.0,
-      "signal": "NEUTRAL"
+      "move": "-0.5",
+      "bet_over": 70.0,
+      "money_over": 68.0,
+      "signal": "\u26a1 SHARP UNDER (RLM)"
     },
     {
       "date": "2026-05-13",
@@ -376,8 +376,8 @@
       "total": 7.0,
       "open_total": 7.0,
       "move": "FLAT",
-      "bet_over": 86.0,
-      "money_over": 85.0,
+      "bet_over": 84.0,
+      "money_over": 84.0,
       "signal": "\ud83d\udc65 PUBLIC OVER"
     },
     {
@@ -393,12 +393,12 @@
       "away_rl_juice": -160,
       "home_rl_juice": 140.0,
       "sides_signal": "\u2261 HOME ML MOVE",
-      "total": 9.0,
+      "total": 9.5,
       "open_total": 9.5,
-      "move": "-0.5",
-      "bet_over": 74.0,
-      "money_over": 83.0,
-      "signal": "\u26a1 SHARP UNDER (RLM)"
+      "move": "FLAT",
+      "bet_over": 75.0,
+      "money_over": 85.0,
+      "signal": "\ud83d\udc65 PUBLIC OVER"
     },
     {
       "date": "2026-05-13",
@@ -416,8 +416,8 @@
       "total": 8.5,
       "open_total": 8.0,
       "move": "+0.5",
-      "bet_over": 65.0,
-      "money_over": 63.0,
+      "bet_over": 64.0,
+      "money_over": 64.0,
       "signal": "\ud83c\udf0a PUBLIC STEAM OVER"
     },
     {
@@ -437,7 +437,7 @@
       "open_total": 9.0,
       "move": "FLAT",
       "bet_over": 73.0,
-      "money_over": 68.0,
+      "money_over": 69.0,
       "signal": "NEUTRAL"
     },
     {
@@ -456,7 +456,7 @@
       "total": 7.5,
       "open_total": 8.0,
       "move": "-0.5",
-      "bet_over": 64.0,
+      "bet_over": 66.0,
       "money_over": 65.0,
       "signal": "\u26a1 SHARP UNDER (RLM)"
     },
@@ -476,7 +476,7 @@
       "total": 8.0,
       "open_total": 8.0,
       "move": "FLAT",
-      "bet_over": 85.0,
+      "bet_over": 84.0,
       "money_over": 76.0,
       "signal": "\ud83d\udc65 PUBLIC OVER"
     },
@@ -496,7 +496,7 @@
       "total": 8.5,
       "open_total": 8.5,
       "move": "FLAT",
-      "bet_over": 70.0,
+      "bet_over": 68.0,
       "money_over": 61.0,
       "signal": "NEUTRAL"
     },
@@ -516,8 +516,8 @@
       "total": 7.0,
       "open_total": 7.0,
       "move": "FLAT",
-      "bet_over": 76.0,
-      "money_over": 68.0,
+      "bet_over": 70.0,
+      "money_over": 61.0,
       "signal": "NEUTRAL"
     },
     {
@@ -556,8 +556,8 @@
       "total": 8.5,
       "open_total": 9.0,
       "move": "-0.5",
-      "bet_over": 70.0,
-      "money_over": 66.0,
+      "bet_over": 71.0,
+      "money_over": 70.0,
       "signal": "\u26a1 SHARP UNDER (RLM)"
     },
     {
@@ -576,9 +576,9 @@
       "total": 8.5,
       "open_total": 8.5,
       "move": "FLAT",
-      "bet_over": 78.0,
-      "money_over": 69.0,
-      "signal": "NEUTRAL"
+      "bet_over": 79.0,
+      "money_over": 75.0,
+      "signal": "\ud83d\udc65 PUBLIC OVER"
     },
     {
       "date": "2026-05-13",
@@ -596,8 +596,8 @@
       "total": 9.0,
       "open_total": 9.0,
       "move": "FLAT",
-      "bet_over": 59.0,
-      "money_over": 54.0,
+      "bet_over": 61.0,
+      "money_over": 57.0,
       "signal": "NEUTRAL"
     },
     {
@@ -613,12 +613,12 @@
       "away_rl_juice": -145,
       "home_rl_juice": 125.0,
       "sides_signal": "\u2014",
-      "total": 10.0,
+      "total": 9.5,
       "open_total": 10.0,
-      "move": "FLAT",
-      "bet_over": 61.0,
-      "money_over": 66.0,
-      "signal": "NEUTRAL"
+      "move": "-0.5",
+      "bet_over": null,
+      "money_over": null,
+      "signal": ""
     },
     {
       "date": "2026-05-13",
@@ -4589,6 +4589,150 @@
       "total_edge": 1.134113715175097,
       "final": 8.0,
       "result": "Loss"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "NYY",
+      "home": "BAL",
+      "conf": "Low",
+      "side": "Over",
+      "home_edge": -1.542999999999999,
+      "pattern": "",
+      "total_edge": 0.8059056031128389,
+      "final": 7.0,
+      "result": "Loss"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "LAA",
+      "home": "CLE",
+      "conf": "Low",
+      "side": "Under",
+      "home_edge": -3.343499999999992,
+      "pattern": "",
+      "total_edge": -0.7722597330739314,
+      "final": 6.0,
+      "result": "Win"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "WSN",
+      "home": "CIN",
+      "conf": "High",
+      "side": "Under",
+      "home_edge": -11.8635,
+      "pattern": "",
+      "total_edge": -2.58598706070039,
+      "final": 15.0,
+      "result": "Loss"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "COL",
+      "home": "PIT",
+      "conf": "High",
+      "side": "Under",
+      "home_edge": -9.316000000000003,
+      "pattern": "",
+      "total_edge": -3.586078508949418,
+      "final": 14.0,
+      "result": "Loss"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "PHI",
+      "home": "BOS",
+      "conf": "Med",
+      "side": "Over",
+      "home_edge": -5.268500000000003,
+      "pattern": "",
+      "total_edge": 1.979340051361874,
+      "final": 4.0,
+      "result": "Loss"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "TBR",
+      "home": "TOR",
+      "conf": "High",
+      "side": "Over",
+      "home_edge": 2.387999999999998,
+      "pattern": "",
+      "total_edge": 4.450505603112841,
+      "final": 8.0,
+      "result": "Win"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "MIA",
+      "home": "MIN",
+      "conf": "Low",
+      "side": "Under",
+      "home_edge": 14.149,
+      "pattern": "",
+      "total_edge": -0.02482617276264598,
+      "final": 14.0,
+      "result": "Loss"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "SDP",
+      "home": "MIL",
+      "conf": "High",
+      "side": "Over",
+      "home_edge": -11.87800000000001,
+      "pattern": "",
+      "total_edge": 3.247039266926068,
+      "final": 4.0,
+      "result": "Loss"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "ARI",
+      "home": "TEX",
+      "conf": "Low",
+      "side": "Under",
+      "home_edge": 4.578999999999997,
+      "pattern": "",
+      "total_edge": -0.3750107330739301,
+      "final": 11.0,
+      "result": "Loss"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "SEA",
+      "home": "HOU",
+      "conf": "Low",
+      "side": "Under",
+      "home_edge": 3.656500000000005,
+      "pattern": "",
+      "total_edge": -0.8050443968871619,
+      "final": 7.0,
+      "result": "Win"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "STL",
+      "home": "ATH",
+      "conf": "Med",
+      "side": "Under",
+      "home_edge": -5.622000000000003,
+      "pattern": "",
+      "total_edge": -1.935083892607004,
+      "final": 8.0,
+      "result": "Win"
+    },
+    {
+      "date": "2026-05-13",
+      "away": "SFG",
+      "home": "LAD",
+      "conf": "High",
+      "side": "Over",
+      "home_edge": -14.45449999999999,
+      "pattern": "",
+      "total_edge": 2.425370715175099,
+      "final": 4.0,
+      "result": "Loss"
     }
   ],
   "env_today": [
@@ -5436,7 +5580,7 @@
       "temp": 65.2,
       "wind": "Out to RF 21mph (gusts 35mph)",
       "is_dome": "No",
-      "final": null,
+      "final": 5,
       "result": ""
     },
     {
@@ -5449,8 +5593,8 @@
       "temp": 65.7,
       "wind": "Cross 11mph (gusts 20mph)",
       "is_dome": "No",
-      "final": null,
-      "result": ""
+      "final": 15,
+      "result": "Win"
     },
     {
       "date": "2026-05-13",
@@ -5462,7 +5606,7 @@
       "temp": 74.2,
       "wind": "Cross 10mph (gusts 14mph)",
       "is_dome": "No",
-      "final": null,
+      "final": 5,
       "result": ""
     },
     {
@@ -5475,8 +5619,8 @@
       "temp": 68.8,
       "wind": "Cross 12mph (gusts 18mph)",
       "is_dome": "No",
-      "final": null,
-      "result": ""
+      "final": 7,
+      "result": "Loss"
     },
     {
       "date": "2026-05-13",
@@ -5488,8 +5632,8 @@
       "temp": 67.5,
       "wind": "Cross 10mph",
       "is_dome": "No",
-      "final": null,
-      "result": ""
+      "final": 4,
+      "result": "Loss"
     },
     {
       "date": "2026-05-13",
@@ -5501,8 +5645,8 @@
       "temp": 64.1,
       "wind": "Cross 9mph (gusts 15mph)",
       "is_dome": "No",
-      "final": null,
-      "result": ""
+      "final": 14,
+      "result": "Win"
     },
     {
       "date": "2026-05-13",
@@ -5514,8 +5658,8 @@
       "temp": 54.7,
       "wind": "Dome \u2014 weather neutral (gusts 21mph)",
       "is_dome": "Yes",
-      "final": null,
-      "result": ""
+      "final": 4,
+      "result": "N/A"
     },
     {
       "date": "2026-05-13",
@@ -5540,8 +5684,8 @@
       "temp": 51.9,
       "wind": "Cross 9mph (gusts 21mph)",
       "is_dome": "No",
-      "final": null,
-      "result": ""
+      "final": 11,
+      "result": "N/A"
     },
     {
       "date": "2026-05-13",
@@ -5553,8 +5697,8 @@
       "temp": 54.1,
       "wind": "Dome \u2014 weather neutral (gusts 25mph)",
       "is_dome": "Yes",
-      "final": null,
-      "result": ""
+      "final": 8,
+      "result": "N/A"
     },
     {
       "date": "2026-05-13",
@@ -5566,8 +5710,8 @@
       "temp": 85.3,
       "wind": "Dome \u2014 weather neutral",
       "is_dome": "Yes",
-      "final": null,
-      "result": ""
+      "final": 7,
+      "result": "N/A"
     },
     {
       "date": "2026-05-13",
@@ -5579,8 +5723,8 @@
       "temp": 61.9,
       "wind": "In from CF 10mph (gusts 18mph)",
       "is_dome": "No",
-      "final": null,
-      "result": ""
+      "final": 14,
+      "result": "Loss"
     },
     {
       "date": "2026-05-13",
@@ -5592,8 +5736,8 @@
       "temp": 61.9,
       "wind": "In from CF 14mph (gusts 32mph)",
       "is_dome": "No",
-      "final": null,
-      "result": ""
+      "final": 4,
+      "result": "Win"
     },
     {
       "date": "2026-05-13",
@@ -5605,8 +5749,8 @@
       "temp": 60.5,
       "wind": "In from CF 17mph (gusts 24mph)",
       "is_dome": "No",
-      "final": null,
-      "result": ""
+      "final": 6,
+      "result": "Win"
     },
     {
       "date": "2026-05-13",
@@ -5618,12 +5762,12 @@
       "temp": 61.4,
       "wind": "In from CF 11mph",
       "is_dome": "No",
-      "final": null,
-      "result": ""
+      "final": 8,
+      "result": "Win"
     }
   ],
   "season": {
-    "wins": 165,
-    "total": 316
+    "wins": 169,
+    "total": 328
   }
 }
