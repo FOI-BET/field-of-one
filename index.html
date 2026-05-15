@@ -723,9 +723,9 @@
 
     <div style="display:flex;gap:20px;flex-wrap:wrap;padding:10px 0 14px;border-bottom:1px solid var(--border);margin-bottom:14px;align-items:center">
       <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);letter-spacing:1px">LEGEND</span>
-      <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:var(--green);border-radius:2px;display:inline-block"></span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">CHECK NOW — sharp signal / move ±1.0+ / ML move 20pt+</span></span>
-      <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:var(--amber);border-radius:2px;display:inline-block"></span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">WATCH — steam / move ±0.5 / ML move 10-19pt</span></span>
-      <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:var(--border);border-radius:2px;display:inline-block"></span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">IGNORE — flat / public / no movement</span></span>
+      <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:var(--green);border-radius:2px;display:inline-block"></span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">CHECK NOW — sharp signal / O/U move ±1.0+ / ML shortened 10pt+</span></span>
+      <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:var(--amber);border-radius:2px;display:inline-block"></span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">WATCH — steam / O/U move ±0.5 / ML shortened ≤10pt</span></span>
+      <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:var(--border);border-radius:2px;display:inline-block"></span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">IGNORE — flat / public / ML flat or lengthened</span></span>
     </div>
 
     <div class="table-wrap">
@@ -917,10 +917,11 @@ function mlMoveDelta(open, curr) {
   return isNaN(o)||isNaN(c) ? 0 : Math.abs(c - o);
 }
 function mlColor(open, curr) {
-  const delta = mlMoveDelta(open, curr);
-  if (delta >= 20) return 'var(--green)';
-  if (delta >= 10) return 'var(--amber)';
-  return 'var(--text-muted)';
+  if (!open || !curr) return 'var(--text-muted)';
+  const o = parseFloat(String(open).replace('+',''));
+  const c = parseFloat(String(curr).replace('+',''));
+  if (isNaN(o) || isNaN(c) || c >= o) return 'var(--text-muted)';
+  return (o - c) > 10 ? 'var(--green)' : 'var(--amber)';
 }
 function moveColor(m) {
   if (!m||m==='FLAT') return 'var(--text-muted)';
@@ -1119,8 +1120,6 @@ function renderMetrics() {
 
 function renderMarket() {
   document.getElementById('mktBody').innerHTML = MKT_DATA.map(g => {
-    const awayDelta  = mlMoveDelta(g.openAwayML, g.awayML);
-    const homeDelta  = mlMoveDelta(g.openHomeML, g.homeML);
     const awayMLCol  = mlColor(g.openAwayML, g.awayML);
     const homeMLCol  = mlColor(g.openHomeML, g.homeML);
     const isSharpRow = g.signal.includes('SHARP') || (g.sidesSignal||'').includes('⚡');
@@ -1128,9 +1127,9 @@ function renderMarket() {
     return `<tr class="${isSharpRow?'sharp-row':''}">
       <td class="matchup-cell">${g.away} <span style="color:var(--text-muted)">@</span> ${g.home}</td>
       <td style="font-family:var(--font-mono);color:var(--text-muted);font-size:0.78rem">${mlFmt(g.openAwayML)}</td>
-      <td style="font-family:var(--font-mono);color:${awayMLCol};font-weight:${awayDelta>=20?'600':'400'}">${mlFmt(g.awayML)}</td>
+      <td style="font-family:var(--font-mono);color:${awayMLCol};font-weight:${awayMLCol==='var(--green)'?'600':'400'}">${mlFmt(g.awayML)}</td>
       <td style="font-family:var(--font-mono);color:var(--text-muted);font-size:0.78rem">${mlFmt(g.openHomeML)}</td>
-      <td style="font-family:var(--font-mono);color:${homeMLCol};font-weight:${homeDelta>=20?'600':'400'}">${mlFmt(g.homeML)}</td>
+      <td style="font-family:var(--font-mono);color:${homeMLCol};font-weight:${homeMLCol==='var(--green)'?'600':'400'}">${mlFmt(g.homeML)}</td>
       <td style="font-family:var(--font-mono);color:var(--cyan)">${g.total||'—'}</td>
       <td style="font-family:var(--font-mono);color:${moveColor(g.move)};font-weight:${moveAbs>=1.0?'600':'400'}">${g.move}</td>
       <td style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">${g.betO}% / ${100-g.betO}%</td>
