@@ -721,28 +721,18 @@
 
     <div class="section-title">MARKET OVERVIEW · TODAY</div>
 
-    <div style="display:flex;gap:20px;flex-wrap:wrap;padding:10px 0 14px;border-bottom:1px solid var(--border);margin-bottom:14px;align-items:center">
-      <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);letter-spacing:1px">LEGEND</span>
-      <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:var(--green);border-radius:2px;display:inline-block"></span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">CHECK NOW — sharp signal / move ±1.0+ / ML move 20pt+</span></span>
-      <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:var(--amber);border-radius:2px;display:inline-block"></span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">WATCH — steam / move ±0.5 / ML move 10-19pt</span></span>
-      <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:var(--border);border-radius:2px;display:inline-block"></span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">IGNORE — flat / public / no movement</span></span>
-    </div>
-
     <div class="table-wrap">
       <table id="mktTable">
         <thead>
           <tr>
             <th>MATCHUP</th>
-            <th>OPEN AWAY</th>
             <th>AWAY ML</th>
-            <th>OPEN HOME</th>
             <th>HOME ML</th>
             <th>TOTAL</th>
             <th>LINE MOVE</th>
             <th>BETS O/U</th>
             <th>MONEY O/U</th>
             <th>SIGNAL</th>
-            <th>ML SIGNAL</th>
           </tr>
         </thead>
         <tbody id="mktBody"></tbody>
@@ -883,17 +873,11 @@ function alignBadge(a) {
   return `<span class="badge badge-neutral">${a}</span>`;
 }
 function signalText(s) {
-  if (!s) return `<span style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.65rem">—</span>`;
-  if (s.includes('SHARP'))  return `<span style="color:var(--green);font-family:var(--font-mono);font-size:0.65rem;font-weight:600">⚡ ${s}</span>`;
-  if (s.includes('STEAM'))  return `<span style="color:var(--amber);font-family:var(--font-mono);font-size:0.65rem">🌊 ${s}</span>`;
-  if (s.includes('PUBLIC')) return `<span style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.65rem">👥 ${s}</span>`;
-  return `<span style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.65rem">—</span>`;
-}
-function sidesSignalText(s) {
-  if (!s) return `<span style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.65rem">—</span>`;
-  if (s.includes('⚡'))  return `<span style="color:var(--green);font-family:var(--font-mono);font-size:0.65rem;font-weight:600">${s}</span>`;
-  if (s.includes('≡'))   return `<span style="color:var(--amber);font-family:var(--font-mono);font-size:0.65rem">${s}</span>`;
-  return `<span style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.65rem">—</span>`;
+  if (!s) return `<span style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.65rem;">—</span>`;
+  if (s.includes('SHARP'))  return `<span style="color:var(--amber);font-family:var(--font-mono);font-size:0.65rem;">⚡ ${s}</span>`;
+  if (s.includes('STEAM'))  return `<span style="color:var(--cyan);font-family:var(--font-mono);font-size:0.65rem;">🌊 ${s}</span>`;
+  if (s.includes('PUBLIC')) return `<span style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.65rem;">👥 ${s}</span>`;
+  return `<span style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.65rem;">—</span>`;
 }
 function envLeanBadge(lean) {
   if (!lean) return `<span style="color:var(--text-muted)">—</span>`;
@@ -904,42 +888,19 @@ function envLeanBadge(lean) {
   if (l==='UNDER') return `<span class="badge badge-under">UNDER</span>`;
   return `<span class="badge badge-neutral">NEUTRAL</span>`;
 }
-function mlFmt(v) {
-  if (v==null) return '—';
-  const n = parseFloat(String(v).replace('+',''));
-  if (isNaN(n)) return '—';
-  return n>0 ? '+'+n : String(n);
-}
-function mlMoveDelta(open, curr) {
-  if (!open || !curr) return 0;
-  const o = parseFloat(String(open).replace('+',''));
-  const c = parseFloat(String(curr).replace('+',''));
-  return isNaN(o)||isNaN(c) ? 0 : Math.abs(c - o);
-}
-function mlColor(open, curr) {
-  const delta = mlMoveDelta(open, curr);
-  if (delta >= 20) return 'var(--green)';
-  if (delta >= 10) return 'var(--amber)';
-  return 'var(--text-muted)';
-}
+function mlFmt(v) { return v==null?'—':(v>0?'+':'')+v; }
+function mlColor(v) { return v==null?'var(--text-muted)':v<0?'var(--red)':'var(--green)'; }
 function moveColor(m) {
   if (!m||m==='FLAT') return 'var(--text-muted)';
-  const v = parseFloat(m);
-  if (isNaN(v)) return 'var(--text-muted)';
-  const abs = Math.abs(v);
-  if (abs >= 1.0) return 'var(--green)';
-  if (abs >= 0.5) return 'var(--amber)';
-  return 'var(--text-muted)';
+  return m.startsWith('+')?'var(--green)':'var(--red)';
 }
 
 // ── Data mappers ──────────────────────────────────────────────────────────────
 function mapDesk(d) {
-  let conf = d.conf||'';
-  if (conf==='Medium') conf='Med';
   return {
     away:       d.away||'', home:       d.home||'',
     awaySP:     d.away_sp||'', homeSP: d.home_sp||'',
-    conf:       conf,        side:       d.side||'',
+    conf:       d.conf||'', side:       d.side||'',
     modelTotal: parseFloat(d.proj)||0,
     edge:       parseFloat(d.edge)||0,
     homeEdge:   parseFloat(d.home_edge)||0,
@@ -956,16 +917,12 @@ function mapDesk(d) {
 }
 function mapMkt(m) {
   return {
-    away:        m.away||'',       home:        m.home||'',
-    openAwayML:  m.open_away_ml||null,
-    awayML:      m.away_ml||null,
-    openHomeML:  m.open_home_ml||null,
-    homeML:      m.home_ml||null,
-    total:       m.total,          move:        m.move||'FLAT',
-    betO:        parseFloat(m.bet_over)||0,
-    monO:        parseFloat(m.money_over)||0,
-    signal:      m.signal||'',
-    sidesSignal: m.sides_signal||'',
+    away:   m.away||'', home:    m.home||'',
+    awayML: m.away_ml,  homeML:  m.home_ml,
+    total:  m.total,    move:    m.move||'FLAT',
+    betO:   parseFloat(m.bet_over)||0,
+    monO:   parseFloat(m.money_over)||0,
+    signal: m.signal||'',
   };
 }
 function mapHistory(h) {
@@ -1019,13 +976,6 @@ async function loadData() {
       {away:'WSN',home:'MIA',conf:'Low',side:'Under',modelTotal:8.44,edge:-0.06,homeEdge:2.1,pattern:'',alignment:'MODEL ONLY',signal:'PUBLIC',envScore:null,envLean:'',envTemp:null,envWind:'',envStadium:'',envDome:''},
       {away:'ATL',home:'LAD',conf:'High',side:'Over',modelTotal:10.76,edge:2.26,homeEdge:0.1,pattern:'',alignment:'ALIGNED',signal:'SHARP OVER (RLM)',envScore:1.083,envLean:'OVER',envTemp:69,envWind:'Cross 9mph',envStadium:'Dodger Stadium',envDome:'No'},
       {away:'CHC',home:'MIL',conf:'Med',side:'Over',modelTotal:9.2,edge:0.7,homeEdge:6,pattern:'Home Edge 5-10',alignment:'MODEL ONLY',signal:'NEUTRAL',envScore:1.04,envLean:'NEUTRAL',envTemp:64,envWind:'Dome',envStadium:'American Family Field',envDome:'Yes'},
-    ];
-    MKT_DATA = [
-      {away:'ATL', home:'LAD', openAwayML:'+118', awayML:'+104',  openHomeML:'-138', homeML:'-126', total:8.5,  move:'-0.5', betO:86, monO:88, signal:'⚡ SHARP UNDER (RLM)'},
-      {away:'CHC', home:'MIL', openAwayML:'+102', awayML:'+102',  openHomeML:'-122', homeML:'-122', total:9.0,  move:'FLAT', betO:70, monO:75, signal:'PUBLIC OVER'},
-      {away:'WSN', home:'MIA', openAwayML:'+155', awayML:'+148',  openHomeML:'-185', homeML:'-178', total:8.0,  move:'FLAT', betO:55, monO:52, signal:'NEUTRAL'},
-      {away:'NYY', home:'BAL', openAwayML:'-172', awayML:'-168',  openHomeML:'+144', homeML:'+139', total:9.0,  move:'+0.5', betO:78, monO:81, signal:'🌊 PUBLIC STEAM OVER'},
-      {away:'STL', home:'ATH', openAwayML:'+138', awayML:'+129',  openHomeML:'-162', homeML:'-156', total:10.5, move:'FLAT', betO:56, monO:65, signal:'NEUTRAL'},
     ];
     HISTORY = buildDemoHistory();
     ENV_TODAY = [];
@@ -1119,24 +1069,15 @@ function renderMetrics() {
 
 function renderMarket() {
   document.getElementById('mktBody').innerHTML = MKT_DATA.map(g => {
-    const awayDelta  = mlMoveDelta(g.openAwayML, g.awayML);
-    const homeDelta  = mlMoveDelta(g.openHomeML, g.homeML);
-    const awayMLCol  = mlColor(g.openAwayML, g.awayML);
-    const homeMLCol  = mlColor(g.openHomeML, g.homeML);
-    const isSharpRow = g.signal.includes('SHARP') || (g.sidesSignal||'').includes('⚡');
-    const moveAbs    = Math.abs(parseFloat(g.move)||0);
-    return `<tr class="${isSharpRow?'sharp-row':''}">
+    return `<tr class="${g.signal.includes('SHARP')?'sharp-row':''}">
       <td class="matchup-cell">${g.away} <span style="color:var(--text-muted)">@</span> ${g.home}</td>
-      <td style="font-family:var(--font-mono);color:var(--text-muted);font-size:0.78rem">${mlFmt(g.openAwayML)}</td>
-      <td style="font-family:var(--font-mono);color:${awayMLCol};font-weight:${awayDelta>=20?'600':'400'}">${mlFmt(g.awayML)}</td>
-      <td style="font-family:var(--font-mono);color:var(--text-muted);font-size:0.78rem">${mlFmt(g.openHomeML)}</td>
-      <td style="font-family:var(--font-mono);color:${homeMLCol};font-weight:${homeDelta>=20?'600':'400'}">${mlFmt(g.homeML)}</td>
+      <td style="font-family:var(--font-mono);color:${mlColor(g.awayML)}">${mlFmt(g.awayML)}</td>
+      <td style="font-family:var(--font-mono);color:${mlColor(g.homeML)}">${mlFmt(g.homeML)}</td>
       <td style="font-family:var(--font-mono);color:var(--cyan)">${g.total||'—'}</td>
-      <td style="font-family:var(--font-mono);color:${moveColor(g.move)};font-weight:${moveAbs>=1.0?'600':'400'}">${g.move}</td>
+      <td style="font-family:var(--font-mono);color:${moveColor(g.move)}">${g.move}</td>
       <td style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">${g.betO}% / ${100-g.betO}%</td>
       <td style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted)">${g.monO}% / ${100-g.monO}%</td>
       <td>${signalText(g.signal)}</td>
-      <td>${sidesSignalText(g.sidesSignal||'')}</td>
     </tr>`;
   }).join('');
   document.getElementById('splitBars').innerHTML = MKT_DATA.map(g => {
